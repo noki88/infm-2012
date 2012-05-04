@@ -2,11 +2,16 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass article
+\textclass scrartcl
 \begin_preamble
 \renewcommand{\labelenumi}{\alph{enumi})}
 \end_preamble
 \use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -49,7 +54,7 @@
 \secnumdepth 2
 \tocdepth 2
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 0cm
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -1508,7 +1513,117 @@ dominiert offensichtlich schwach
 \end_layout
 
 \begin_layout Standard
-test
+Sei 
+\begin_inset Formula $A$
+\end_inset
+
+ die Menger der Wähler, die für Kandidat 1 stimmen und 
+\begin_inset Formula $B$
+\end_inset
+
+ die Menge Wähler, die für Kandidat 2 stimmen.
+\end_layout
+
+\begin_layout Standard
+Falls Kandidat 1 mit einer Stimme Vorsprung gewinnt, d.h.
+ 
+\begin_inset Formula $A=B+1$
+\end_inset
+
+, und in 
+\begin_inset Formula $A$
+\end_inset
+
+ Wähler enthalten sind, die eigentlich Kandidat 
+\begin_inset Formula $2$
+\end_inset
+
+ bevorzugen, dann können sie ihre Auszahlung erhöhen, indem sie für Kandidat
+ 
+\begin_inset Formula $2$
+\end_inset
+
+ stimmen (kein NG).
+\end_layout
+
+\begin_layout Standard
+Analog gilt, dass 
+\begin_inset Formula $B=A+1$
+\end_inset
+
+ kein NG sein kann, falls in 
+\begin_inset Formula $B$
+\end_inset
+
+ Wähler enthalten sind, die eigentlich Kandidat 
+\begin_inset Formula $1$
+\end_inset
+
+ bevorzugen (also auch kein NG).
+\end_layout
+
+\begin_layout Standard
+Falls 
+\begin_inset Formula $A=B+1$
+\end_inset
+
+ und in 
+\begin_inset Formula $A$
+\end_inset
+
+ sind nur Wähler enthalten, die Kandidat 1 bevorzugen, außerdem sind in
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ Wähler enthalten, die ebenfalls Kandidat 1 bevorzugen, dann handelt es
+ sich um ein NG: Für die Wähler aus 
+\begin_inset Formula $A$
+\end_inset
+
+ macht es keinen Sinn, von ihrer Wahl abzuweichen.
+ Für die Wähler aus 
+\begin_inset Formula $B$
+\end_inset
+
+, die Kandidat 1 bevorzugen, macht es keinen Unterschied, ihre Auszahlung
+ beträgt in jedem Fall 1.
+ Für die Wähler aus 
+\begin_inset Formula $B$
+\end_inset
+
+, die Kandidat 2 bevorzugen, macht es keinen Unterschied, ihre Auszahlung
+ beträgt in jedem Fall 0.
+ 
+\end_layout
+
+\begin_layout Standard
+Die Situation, dass 
+\begin_inset Formula $B=A+1$
+\end_inset
+
+ und in 
+\begin_inset Formula $B$
+\end_inset
+
+ sind nur Wähler enthalten, die Kandidat 2 bevorzugen, kann nicht vorkommen,
+ da die Mehrheit der Wähler Kandidat 1 bevorzugt.
+\end_layout
+
+\begin_layout Standard
+Falls einer der Kandidaten mit mehr als einer Stimme Vorsprung gewinnt,
+ d.h.
+ 
+\begin_inset Formula $A\geq B+3$
+\end_inset
+
+ oder 
+\begin_inset Formula $B\geq A+3$
+\end_inset
+
+ , dann kann ein Wähler durch Wählen des anderen Kandidatens den Wahlausgang
+ nicht beeinflussen und daher seine Auszahlung nicht verbessern - es handelt
+ sich also um ein NG.
 \end_layout
 
 \end_body
