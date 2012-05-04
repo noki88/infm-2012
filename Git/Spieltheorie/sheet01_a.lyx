@@ -32,8 +32,8 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 0
-\use_esint 0
+\use_amsmath 2
+\use_esint 1
 \use_mhchem 1
 \use_mathdots 1
 \cite_engine basic
@@ -1141,7 +1141,8 @@ Da die Gesamtzahl der Wähler ungerade ist, ist
 \end_inset
 
 .
- Die Stimme von Spieler 1 ändert den Wahlausgang daher nicht.
+ Die Stimme von Spieler 1 ändert den Wahlausgang in diesen beiden Fällen
+ daher nicht.
 \end_layout
 
 \begin_layout Standard
