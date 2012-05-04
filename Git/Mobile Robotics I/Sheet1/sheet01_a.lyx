@@ -1,0 +1,425 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 0
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "captionpos=b"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Introduction to Mobile Robotics - Sheet 1
+\end_layout
+
+\begin_layout Standard
+\align center
+Stefan Wrobel, Viktor Kurz
+\begin_inset Newline newline
+\end_inset
+
+{wrobels,kurzv}@informatik.uni-freiburg.de
+\end_layout
+
+\begin_layout Subsubsection*
+Exercise 1: Defining functions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Matlab,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+function y = f (x)    
+\end_layout
+
+\begin_layout Plain Layout
+
+	y = x .* x; 
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+f.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Exercise 2: Plotting data
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Matlab,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x = -10:0.1:10; 
+\end_layout
+
+\begin_layout Plain Layout
+
+y = f(x); 
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(x, y) 
+\end_layout
+
+\begin_layout Plain Layout
+
+print('/tmp/plot_f.png', '-dpng')
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+plot_f.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plot_f.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+plot_f.png
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Exercise 3: Generating random numbers
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Matlab,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+a = normrnd (5,2,1,10000); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ex3.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Matlab,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+b = unifrnd (0,10,1,10000); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ex3.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Matlab,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+mean_a = mean(a) 
+\end_layout
+
+\begin_layout Plain Layout
+
+std_a = std(a) 
+\end_layout
+
+\begin_layout Plain Layout
+
+mean_b = mean(b) 
+\end_layout
+
+\begin_layout Plain Layout
+
+std_b = std(b) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ex3.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Der Durchschnitt sowie die Standardabweichung stimmen mit den an den normally-di
+stributed-random-generator übegebenen Weten in etwa überein.
+ Der Durchschnitt des mit dem uniformly-distributed-random-generator erzeugten
+ Werte lag wie erwartet bei 5.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Matlab,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+hist(a) print('/tmp/ex3_fig_a.png', '-dpng') 
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(b) print('/tmp/ex3_fig_b.png', '-dpng')
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ex3.m
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ex3_fig_a.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ex3_fig_a.png
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ex3_fig_b.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ex3_fig_b.png
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
