@@ -530,7 +530,7 @@ Aufgabe 2:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $G=(\{N\},\{A_{i}\},\{u_{i}\})$
+\begin_inset Formula $G=(\{S_{i|i\in1,2,..,n}\},\{A_{i}\},\{u_{i}\})$
 \end_inset
 
  mit 
@@ -538,10 +538,29 @@ Aufgabe 2:
 \end_inset
 
  
-\begin_inset Formula $\forall\, i\in N$
+\begin_inset Formula $\forall\, i\in1,2,..,n$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Nutzenfunktion allgemein: 
+\begin_inset Formula $u_{i}(a)=\begin{cases}
+1 & präferierter\, Kandidat\, hat\, Mehrheit\\
+0 & sonst
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nutzenmatrix für 
+\begin_inset Formula $m=3$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -1048,7 +1067,7 @@ Aufgabe 2:
 \end_layout
 
 \begin_layout Standard
-test
+Um zu 
 \end_layout
 
 \begin_layout Subsubsection
