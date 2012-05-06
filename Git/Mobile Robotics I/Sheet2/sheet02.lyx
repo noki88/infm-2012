@@ -94,8 +94,84 @@ ToDo
 Aufgabe 2:
 \end_layout
 
+\begin_layout Subsubsection*
+(a)
+\end_layout
+
 \begin_layout Standard
-ToDo
+Zwei Steuerkommandos sind notwendig:
+\end_layout
+
+\begin_layout Standard
+In einem Halbkreis von 
+\begin_inset Formula $(1.0,2.0)$
+\end_inset
+
+ nach
+\begin_inset Formula $(1.5,2.0)$
+\end_inset
+
+ fahren, dann um 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ drehen.
+\end_layout
+
+\begin_layout Subsubsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+Strecke entspricht einem Halbkreis mit Radius 
+\begin_inset Formula $r=0.25m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Daraus ergibt sich Strecke 
+\begin_inset Formula $s=0.25\pi m\approx0.79m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(c)
+\end_layout
+
+\begin_layout Standard
+Drei Steuerkommandos sind notwendig:
+\end_layout
+
+\begin_layout Standard
+Um 
+\begin_inset Formula $-90\text{°}$
+\end_inset
+
+ drehen, geradeaus nach 
+\begin_inset Formula $(1.5,2.0)$
+\end_inset
+
+ fahren, dann um 
+\begin_inset Formula $90\text{°}$
+\end_inset
+
+ drehen.
+\end_layout
+
+\begin_layout Subsubsection*
+(d)
+\end_layout
+
+\begin_layout Standard
+Strecke entspricht einer Geraden mit der Länge 
+\begin_inset Formula $s=0.5m$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
