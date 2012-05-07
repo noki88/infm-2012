@@ -116,6 +116,16 @@ In einem Halbkreis von
 \end_inset
 
  drehen.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+vk:check
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -133,6 +143,16 @@ Strecke entspricht einem Halbkreis mit Radius
 \begin_layout Standard
 Daraus ergibt sich Strecke 
 \begin_inset Formula $s=0.25\pi m\approx0.79m$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+vk:check
+\end_layout
+
 \end_inset
 
 
@@ -160,6 +180,16 @@ Um
 \end_inset
 
  drehen.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+vk:check
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -169,6 +199,16 @@ Um
 \begin_layout Standard
 Strecke entspricht einer Geraden mit der Länge 
 \begin_inset Formula $s=0.5m$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+vk:check
+\end_layout
+
 \end_inset
 
 
