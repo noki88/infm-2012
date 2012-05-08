@@ -13,7 +13,7 @@ eqs-within-sections
 figs-within-sections
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language ngerman
 \language_package default
 \inputencoding default
 \fontencoding global
@@ -136,7 +136,7 @@ Globale Position des Objekts:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p_{global}=X_{1}\cdot p_{relativ}=\left(\begin{array}{cc}
+\begin_inset Formula $p_{global}=X_{1}\cdot p_{relativ}=\left(\begin{array}{cc}
 R(\theta_{1}) & \left(\begin{array}{c}
 x_{1}\\
 y_{1}
@@ -148,7 +148,7 @@ l_{x}\\
 l_{y}
 \end{array}\right)\\
 1
-\end{array}\right)=\left(\begin{array}{c}
+\end{array}\right)=\left(\begin{array}{c}
 R(\theta_{1})\left(\begin{array}{c}
 l_{x}\\
 l_{y}
@@ -169,7 +169,7 @@ y_{1}
 
 \begin_layout Standard
 Aus Teilaufgabe (a) ist bekannt: 
-\begin_inset Formula $p_{global}=X_{1}\cdot p_{relativ}$
+\begin_inset Formula $p_{global}=X_{1}\cdot p_{relativ}$
 \end_inset
 
 
@@ -177,7 +177,7 @@ Aus Teilaufgabe (a) ist bekannt:
 
 \begin_layout Standard
 Daraus ergibt sich: 
-\begin_inset Formula $\Leftrightarrow X_{1}^{-1}\cdot p_{global}=X_{1}^{-1}X_{1}\cdot p_{relativ}\Rightarrow p_{relativ}=X_{1}^{-1}\cdot p_{global}$
+\begin_inset Formula $\Leftrightarrow X_{1}^{-1}\cdot p_{global}=X_{1}^{-1}X_{1}\cdot p_{relativ}\Rightarrow p_{relativ}=X_{1}^{-1}\cdot p_{global}$
 \end_inset
 
 
@@ -270,7 +270,7 @@ Für die relative Position des Objekts zu
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p_{relX1}=T_{12}\cdot p_{relX2}=X_{1}^{-1}\cdot X_{2}\cdot p_{relX2}$
+\begin_inset Formula $p_{relX1}=T_{12}\cdot p_{relX2}=X_{1}^{-1}\cdot X_{2}\cdot p_{relX2}$
 \end_inset
 
 
