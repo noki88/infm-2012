@@ -49,7 +49,7 @@
 \secnumdepth 2
 \tocdepth 2
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 0bp
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -81,8 +81,216 @@ Stefan Wrobel, Viktor Kurz
 Aufgabe 1: 
 \end_layout
 
+\begin_layout Subsubsection*
+(a)
+\end_layout
+
 \begin_layout Standard
-das ist die sung.
+Falls 
+\begin_inset Formula $(x^{*},y^{*})$
+\end_inset
+
+ ein NG in 
+\begin_inset Formula $G$
+\end_inset
+
+ ist, dann gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\max\limits _{x}\min\limits _{y}u_{1}(x,y)=\min\limits _{y}\max\limits _{x}u_{1}(x,y)=u_{1}(x^{*},y^{*})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Werden in 
+\begin_inset Formula $G'$
+\end_inset
+
+ einige Nutzenwerte von Spieler 1 erhöht, dann gilt:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $u'_{1}(x,y)\geq u_{1}(x,y)$
+\end_inset
+
+ für 
+\begin_inset Formula $x\in A_{1},y\in A_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Daher gilt auch:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\max\limits _{x}\min\limits _{y}u'_{1}(x,y)\geq\max\limits _{x}\min\limits _{y}u_{1}(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da im NG in 
+\begin_inset Formula $G'$
+\end_inset
+
+ gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\max\limits _{x}\min\limits _{y}u'_{1}(x,y)=\min\limits _{y}\max\limits _{x}u'_{1}(x,y)=u'_{1}(x^{*},y^{*})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+muss also 
+\begin_inset Formula $u_{1}(x^{*},y^{*})\geq u_{1}(x^{*},y^{*})$
+\end_inset
+
+ sein.
+\end_layout
+
+\begin_layout Subsubsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+Falls 
+\begin_inset Formula $(x^{*},y^{*})$
+\end_inset
+
+ ein NG in 
+\begin_inset Formula $G$
+\end_inset
+
+ ist, dann gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\max\limits _{x}\min\limits _{y}u_{1}(x,y)=\min\limits _{y}\max\limits _{x}u_{1}(x,y)=u_{1}(x^{*},y^{*})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d.h.
+ 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ ist beste Antwort auf 
+\begin_inset Formula $y^{*}$
+\end_inset
+
+ ,
+\end_layout
+
+\begin_layout Standard
+d.h.
+ 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ ist diejenige Aktion, die den höchsten Nutzen bringt, wenn Spieler 2 
+\begin_inset Formula $y^{*}$
+\end_inset
+
+ spielt.
+\end_layout
+
+\begin_layout Standard
+Wird in 
+\begin_inset Formula $G'$
+\end_inset
+
+ die Aktion 
+\begin_inset Formula $x_{i}\neq x^{*}$
+\end_inset
+
+gestrichen, so muss 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+weiterhin die beste Antwort auf 
+\begin_inset Formula $y^{*}$
+\end_inset
+
+ sein.
+ Wäre dies nicht so, dann hätte 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ eine höhere Auszahlung als 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ergeben, d.h.
+ 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+wäre keine beste Anwort auf 
+\begin_inset Formula $y^{*}$
+\end_inset
+
+ gewesen, dies ist ein Widerspruch! Die Auszahlung in 
+\begin_inset Formula $G'$
+\end_inset
+
+ ist in diesem Fall daher identisch mit der in 
+\begin_inset Formula $G$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Wird in 
+\begin_inset Formula $G'$
+\end_inset
+
+ die Aktion 
+\begin_inset Formula $x_{i}=x^{*}$
+\end_inset
+
+gestrichen, so ist eine andere Aktion 
+\begin_inset Formula $x'$
+\end_inset
+
+ beste Antwort auf 
+\begin_inset Formula $y^{*}$
+\end_inset
+
+.
+ Da 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+beste Antwort in G war, muss die Auszahlung bei Aktion 
+\begin_inset Formula $x'$
+\end_inset
+
+ kleinere oder gleiche Auszahlung geben.
 \end_layout
 
 \begin_layout Subsubsection*
