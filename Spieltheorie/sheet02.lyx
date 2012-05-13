@@ -173,7 +173,7 @@ Da im NG in
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\max\limits _{x}\min\limits _{y}u'_{1}(x,y)=\min\limits _{y}\max\limits _{x}u'_{1}(x,y)=u'_{1}(x^{*},y^{*})
+\max\limits _{x}\min\limits _{y}u'_{1}(x,y)=\min\limits _{y}\max\limits _{x}u'_{1}(x,y)=u'_{1}(x'^{*},y'^{*})
 \]
 
 \end_inset
@@ -185,7 +185,7 @@ Da im NG in
 muss also 
 \begin_inset Formula 
 \[
-u'_{1}(x^{*},y^{*})\geq u_{1}(x^{*},y^{*})
+u'_{1}(x'^{*},y'^{*})\geq u_{1}(x^{*},y^{*})
 \]
 
 \end_inset
