@@ -185,7 +185,7 @@ Da im NG in
 muss also 
 \begin_inset Formula 
 \[
-u_{1}(x^{*},y^{*})\geq u_{1}(x^{*},y^{*})
+u'_{1}(x^{*},y^{*})\geq u_{1}(x^{*},y^{*})
 \]
 
 \end_inset
