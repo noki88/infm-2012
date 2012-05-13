@@ -297,12 +297,8 @@ beste Antwort in G war, muss die Auszahlung bei Aktion
 Aufgabe 2:
 \end_layout
 
-\begin_layout Subsubsection*
-(a)
-\end_layout
-
 \begin_layout Standard
-Gegenbeispiel
+Gegenbeispiel:
 \end_layout
 
 \begin_layout Standard
@@ -525,15 +521,182 @@ Gegenbeispiel
 
 \end_layout
 
+\begin_layout Standard
+Das Strategieprofil 
+\begin_inset Formula $(x_{2},y_{2})$
+\end_inset
+
+ ist NG.
+ Das Strategieprofil 
+\begin_inset Formula $(x_{1},y_{1})$
+\end_inset
+
+ führt für beide Spieler zur selben Auszahlung wie im NG, ist aber selbst
+ kein NG: Spieler 1 könnte durch Abweichen zur Strategie 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ seine Auszahlung erhöhen, Spieler 2 könnte seine Auszahlung durch Abweichen
+ zur Strategie 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ verbessern.
+ 
+\end_layout
+
 \begin_layout Subsubsection*
-(b)
+Aufgabe 3:
+\end_layout
+
+\begin_layout Subsubsection*
+(a)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $u_{i}(a_{-i},a'_{i})>u_{i}(a_{-i},a_{i}^{*})$
+Wenn 
+\begin_inset Formula $a_{i}\in A_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ stark dominiert wird, dann gibt es eine Strategie 
+\begin_inset Formula $a_{i}^{+}\in A_{i}$
+\end_inset
+
+ sodass gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{i}(a_{-i},a{}_{i}^{+})>u_{i}(a_{-i},a_{i})
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $\alpha_{i}\in A'_{1}$
+\end_inset
+
+ eine gemischte Strategie der gemischten Erweiterung 
+\begin_inset Formula $G'$
+\end_inset
+
+ mit 
+\begin_inset Formula $\alpha_{i}(a_{i})=1$
+\end_inset
+
+ und 
+\begin_inset Formula $\alpha_{i}^{+}\in A'_{1}$
+\end_inset
+
+ eine gemischte Strategie mit 
+\begin_inset Formula $\alpha_{i}^{+}(a_{i}^{+})=1$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Für den erwarteten Nutzen des Spielers 
+\begin_inset Formula $i$
+\end_inset
+
+ gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{i}(\alpha)=U_{i}((\alpha_{j})_{j\in N}=\sum\limits _{\alpha\in A'}(\prod\limits _{j\in N}\alpha_{j}(a_{j}))u_{i}(a)
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+d.h.
+ 
+\begin_inset Formula 
+\[
+U_{i}(\alpha_{-i},\alpha_{i})=U_{i}(\alpha_{-i},a_{i})
+\]
+
+\end_inset
+
+ und 
+\begin_inset Formula 
+\[
+U_{i}(\alpha_{-i},\alpha_{i}^{+})=U_{i}(\alpha_{-i},a_{i}^{+})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da die Strategie 
+\begin_inset Formula $a_{i}^{+}$
+\end_inset
+
+in 
+\begin_inset Formula $G$
+\end_inset
+
+ immer eine bessere Antwort als 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+auf alle anderen Strategien der anderen Spieler ist, muss auch die Strategie
+ 
+\begin_inset Formula $\alpha_{i}^{+}$
+\end_inset
+
+in 
+\begin_inset Formula $G'$
+\end_inset
+
+ immer eine bessere Antwort als 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ sein.
+ Daher ist 
+\begin_inset Formula 
+\[
+U_{i}(\alpha_{-i},\alpha_{i}^{+})>U_{i}(\alpha_{-i},\alpha_{i})
+\]
+
+\end_inset
+
+ bzw.
+ 
+\begin_inset Formula 
+\[
+U_{i}(\alpha_{-i},a_{i}^{+})>U_{i}(\alpha_{-i},a_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die reine Strategie 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ wird also auch in der gemischten Erweiterung strikt dominiert.
 \end_layout
 
 \end_body
