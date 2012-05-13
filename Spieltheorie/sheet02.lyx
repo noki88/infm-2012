@@ -98,7 +98,11 @@ Falls
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\max\limits _{x}\min\limits _{y}u_{1}(x,y)=\min\limits _{y}\max\limits _{x}u_{1}(x,y)=u_{1}(x^{*},y^{*})$
+\begin_inset Formula 
+\[
+\max\limits _{x}\min\limits _{y}u_{1}(x,y)=\min\limits _{y}\max\limits _{x}u_{1}(x,y)=u_{1}(x^{*},y^{*})
+\]
+
 \end_inset
 
 
@@ -125,11 +129,19 @@ Werden in
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $u'_{1}(x,y)\geq u_{1}(x,y)$
+\begin_inset Formula 
+\[
+u'_{1}(x,y)\geq u_{1}(x,y)
+\]
+
 \end_inset
 
  für 
-\begin_inset Formula $x\in A_{1},y\in A_{2}$
+\begin_inset Formula 
+\[
+x\in A_{1},y\in A_{2}
+\]
+
 \end_inset
 
 
@@ -140,7 +152,11 @@ Daher gilt auch:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\max\limits _{x}\min\limits _{y}u'_{1}(x,y)\geq\max\limits _{x}\min\limits _{y}u_{1}(x,y)$
+\begin_inset Formula 
+\[
+\max\limits _{x}\min\limits _{y}u'_{1}(x,y)\geq\max\limits _{x}\min\limits _{y}u_{1}(x,y)
+\]
+
 \end_inset
 
 
@@ -155,7 +171,11 @@ Da im NG in
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\max\limits _{x}\min\limits _{y}u'_{1}(x,y)=\min\limits _{y}\max\limits _{x}u'_{1}(x,y)=u'_{1}(x^{*},y^{*})$
+\begin_inset Formula 
+\[
+\max\limits _{x}\min\limits _{y}u'_{1}(x,y)=\min\limits _{y}\max\limits _{x}u'_{1}(x,y)=u'_{1}(x^{*},y^{*})
+\]
+
 \end_inset
 
 
@@ -163,7 +183,11 @@ Da im NG in
 
 \begin_layout Standard
 muss also 
-\begin_inset Formula $u_{1}(x^{*},y^{*})\geq u_{1}(x^{*},y^{*})$
+\begin_inset Formula 
+\[
+u_{1}(x^{*},y^{*})\geq u_{1}(x^{*},y^{*})
+\]
+
 \end_inset
 
  sein.
@@ -186,7 +210,11 @@ Falls
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\max\limits _{x}\min\limits _{y}u_{1}(x,y)=\min\limits _{y}\max\limits _{x}u_{1}(x,y)=u_{1}(x^{*},y^{*})$
+\begin_inset Formula 
+\[
+\max\limits _{x}\min\limits _{y}u_{1}(x,y)=\min\limits _{y}\max\limits _{x}u_{1}(x,y)=u_{1}(x^{*},y^{*})
+\]
+
 \end_inset
 
 
@@ -747,7 +775,11 @@ Falls
 \begin_inset Formula $a_{i}$
 \end_inset
 
- in ebenfalls stark dominiert wird, dann muss es eine reine Strategie 
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ ebenfalls stark dominiert wird, dann muss es eine reine Strategie 
 \begin_inset Formula $a_{i}^{+}$
 \end_inset
 
@@ -1152,7 +1184,126 @@ Die Umkehrung von (a) gilt daher im Allgemeinen nicht.
 \end_layout
 
 \begin_layout Standard
-ToDo
+Wenn 
+\begin_inset Formula $a_{i}\in A'_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $G'$
+\end_inset
+
+ stark dominiert wird, dann gibt es eine Strategie 
+\begin_inset Formula $\alpha_{i}^{+}\in\Delta(A'_{i})$
+\end_inset
+
+ sodass gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{i}(\alpha_{-i},\alpha{}_{i}^{+})>U_{i}(\alpha_{-i},a_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $\alpha_{i}'\in\Delta(A'_{i})$
+\end_inset
+
+ eine gemischte Strategie mit 
+\begin_inset Formula $a_{i}\in supp(\alpha_{i}')$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dann hat die gemischte Strategie 
+\begin_inset Formula $\alpha_{i}^{*}$
+\end_inset
+
+ , die als Antwort auf die Aktionen der anderen Spieler in denjenigen Fällen,
+ in denen bei der gemischten Strategie 
+\begin_inset Formula $\alpha_{i}'$
+\end_inset
+
+ die reine Strategie 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ gewählt wird, stattdessen die jeweils entsprechende reine Strategie aus
+ 
+\begin_inset Formula $\alpha_{i}^{+}$
+\end_inset
+
+wählt, einen höheren Erwartungswert als die Strategie 
+\begin_inset Formula $\alpha_{i}'$
+\end_inset
+
+.
+ Daher gilt: 
+\begin_inset Formula 
+\[
+U_{i}(\alpha_{-i},\alpha{}_{i}^{*})>U_{i}(\alpha_{-i},\alpha_{i}')
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d.h.
+ die Strategie 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\alpha_{i}'$
+\end_inset
+
+ wird von 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\alpha_{i}^{*}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ stark dominiert.
 \end_layout
 
 \end_body
