@@ -323,12 +323,38 @@ Aufgabe 2.3:
 (a)
 \end_layout
 
+\begin_layout Standard
+Algorithmus verfolgt den Pfad mit den niedrigsten Pfadkosten -> Falls der
+ Pfad unendlich lang ist, dann werden andere Pfade im Baum nicht besucht.
+\end_layout
+
 \begin_layout Subsubsection*
 (b)
 \end_layout
 
+\begin_layout Standard
+Der Agent läuft dadurch ständig im Kreis (d.h.
+ wendet die entsprechenden Oprtatoren an und bleibt im selben Zustand).
+\end_layout
+
 \begin_layout Subsubsection*
 Aufgabe 2.4:
+\end_layout
+
+\begin_layout Subsubsection*
+(a) Misplaced-Tiles
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsubsection*
+(b) Manhattan-Distance
+\end_layout
+
+\begin_layout Standard
+TODO
 \end_layout
 
 \end_body
