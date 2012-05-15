@@ -87,27 +87,336 @@ Aufgabe 1:
 \end_layout
 
 \begin_layout Subsubsection*
-(a)
+(a)(b) 
 \end_layout
 
-\begin_layout Subsubsection*
-(b)
+\begin_layout Standard
+siehe m-files
 \end_layout
 
 \begin_layout Subsubsection
 Aufgabe 2:
 \end_layout
 
+\begin_layout Standard
+Gegeben:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(app\_blue|blue)=0.75$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(app\_green|blue)=0.25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(app\_blue|green)=0.25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(app\_green|green)=0.75$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Daraus ergibt sich:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(blue|app\_blue)=\frac{p(app\_blue|blue)\cdot p(blue)}{p(app\_blue|blue)\cdot p(blue)+p(app\_blue|green)\cdot p(green)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+bzw.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(green|app\_blue)=\frac{p(app\_blue|green)\cdot p(green)}{p(app\_blue|blue)\cdot p(blue)+p(app\_blue|green)\cdot p(green)}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
-TODO
+(a)
+\end_layout
+
+\begin_layout Standard
+Nein, es ist nicht möglich zu bestimmen, welche Farbe das Auto wahrscheinlich
+ hat.
+ Hierzu ist die Information notwendig, wie viele blaue bzw.
+ grüne Autos es insgesamt gibt, also 
+\begin_inset Formula $P(green)$
+\end_inset
+
+ und 
+\begin_inset Formula $P(blue)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(blue)=0.1$
+\end_inset
+
+, 
+\begin_inset Formula $p(green)=0.9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eingesetzt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(blue|app\_blue)=\frac{0.75\cdot0.1}{0.75\cdot0.1+0.25\cdot0.9}=\frac{0.075}{0.075+0.225}=0.25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+bzw.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(green|app\_blue)=\frac{0.25\cdot0.9}{0.75\cdot0.1+0.25\cdot0.9}=0.75$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Das heißt, das Auto ist mit einer Wahrscheinlichkeit von 25% blau bzw.
+ 75% grün.
+\end_layout
+
+\begin_layout Subsubsection*
+(c)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(blue)=0.3$
+\end_inset
+
+, 
+\begin_inset Formula $p(green)=0.7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eingesetzt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(blue|app\_blue)=\frac{0.75\cdot0.3}{0.25\cdot0.7+0.75\cdot0.3}=\frac{0.225}{0.175+0.225}=0.56$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+bzw.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(green|app\_blue)=\frac{0.25\cdot0.7}{0.25\cdot0.7+0.75\cdot0.3}=\frac{0.155}{0.175+0.225}=0.44$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Das heißt, das Auto ist mit einer Wahrscheinlichkeit von 44% blau bzw.
+ 56% grün.
 \end_layout
 
 \begin_layout Subsubsection
 Aufgabe 3:
 \end_layout
 
+\begin_layout Subsubsection*
+(a)(b)
+\end_layout
+
 \begin_layout Standard
-ToDo
+Gesucht: 
+\begin_inset Formula $p(x_{t}=dirty|z_{t}=clean,\, u_{t-1}=vac-clean)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Das Ziel soll sein, dass der Raum durch den Roboter tatsächlich gereinigt
+ wird.
+\end_layout
+
+\begin_layout Standard
+Daher wird pessimistisch die Annahme getroffen, dass der Raum zum Zeitpunkt
+ 
+\begin_inset Formula $t-1$
+\end_inset
+
+ schmutzig war.
+\end_layout
+
+\begin_layout Standard
+D.h.: 
+\begin_inset Formula $Bel(x_{t-1}=dirty)=1$
+\end_inset
+
+ bzw.
+ 
+\begin_inset Formula $Bel(x_{t-1}=clean)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Umso höher die Wahrscheinlichkeit angenommen wird, dass der Raum bereits
+ zum Zeitpunkt 
+\begin_inset Formula $t-1$
+\end_inset
+
+ bereits gereinigt war, desto geringer ist die Wahrscheinlichkeit, dass
+ zum Zeitpunkt 
+\begin_inset Formula $t$
+\end_inset
+
+ der Raum noch schmutzig ist.
+ Insbesondere wird bei 
+\begin_inset Formula $Bel(x_{t-1}=dirty)=0$
+\end_inset
+
+ bzw.
+ 
+\begin_inset Formula $Bel(x_{t-1}=clean)=1$
+\end_inset
+
+ die Wahrschenlichkeit 
+\begin_inset Formula $p(x_{t}=dirty|z_{t}=clean,\, u_{t-1}=vac-clean)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Rechnung mit 
+\begin_inset Formula $Bel(x_{t-1}=dirty)=1$
+\end_inset
+
+ ergibt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(x_{t}=dirty|z_{t}=clean,\, u_{t-1}=vac-clean)$
+\end_inset
+
+
+\begin_inset Formula $=Bel(x_{t}=dirty)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\eta\cdot p(z_{t}=clean|x_{t}=dirty)\cdot\left[p(x_{t}=dirty|u_{t-1}=vac-clean,x_{t-1}=dirty)\cdot Bel(x_{t}=dirty)+p(x_{t}=dirty|u_{t-1}=vac-clean,x_{t-1}=clean)\cdot Bel(x_{t}=clean)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\eta\cdot0.3\cdot\left[0.3\cdot1+0\cdot0\right]=\eta\cdot0.09$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analog:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(x_{t}=clean|z_{t}=clean,\, u_{t-1}=vac-clean)$
+\end_inset
+
+
+\begin_inset Formula $=Bel(x_{t}=clean)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\eta\cdot p(z_{t}=clean|x_{t}=clean)\cdot\left[p(x_{t}=clean|u_{t-1}=vac-clean,x_{t-1}=dirty)\cdot Bel(x_{t}=dirty)+p(x_{t}=clean|u_{t-1}=vac-clean,x_{t-1}=clean)\cdot Bel(x_{t}=clean)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\eta\cdot0.9\cdot\left[0.7\cdot1+1\cdot0\right]=\eta\cdot0.63$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Daraus ergibt sich für 
+\begin_inset Formula $\eta$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\eta=\frac{1}{0.09+0.63}=1.39$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Somit ist 
+\begin_inset Formula $Bel(x_{t}=dirty)=0.125$
+\end_inset
+
+ und 
+\begin_inset Formula $Bel(x_{t}=clean)=0.875$
+\end_inset
+
+
 \end_layout
 
 \end_body
