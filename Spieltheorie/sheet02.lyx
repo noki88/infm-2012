@@ -8,7 +8,7 @@
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language ngerman
 \language_package default
 \inputencoding default
 \fontencoding global
@@ -319,6 +319,39 @@ beste Antwort in G war, muss die Auszahlung bei Aktion
 \end_inset
 
  kleinere oder gleiche Auszahlung geben.
+ Formal:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+changed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\max\limits _{x}\min\limits _{y}u_{1}(x,y)\geq\max\limits _{x}\min\limits _{y}u'_{1}(x',y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{1}(x^{*},y^{*})\geq u'_{1}(x'^{*},y^{*})
+\]
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Subsubsection*
@@ -331,8 +364,6 @@ Gegenbeispiel:
 
 \begin_layout Standard
 \align center
-
-\lang ngerman
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
 <features tabularvalignment="middle">
@@ -363,8 +394,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $S_{2}$
 \end_inset
 
@@ -406,8 +435,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $y_{1}$
 \end_inset
 
@@ -420,8 +447,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $y_{2}$
 \end_inset
 
@@ -436,8 +461,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $S_{1}$
 \end_inset
 
@@ -450,8 +473,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $x_{1}$
 \end_inset
 
@@ -464,8 +485,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $1,-1$
 \end_inset
 
@@ -478,8 +497,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $0,0$
 \end_inset
 
@@ -503,8 +520,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $x_{2}$
 \end_inset
 
@@ -517,8 +532,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $2,-2$
 \end_inset
 
@@ -531,8 +544,6 @@ Gegenbeispiel:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $1,-1$
 \end_inset
 
@@ -595,12 +606,22 @@ Wenn
 \end_inset
 
  sodass gilt:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+changed
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-u_{i}(a_{-i},a{}_{i}^{+})>u_{i}(a_{-i},a_{i})
+u_{i}(a_{-i},a{}_{i}^{+})>u_{i}(a_{-i},a_{i})\;\forall\, a_{i}\in A_{i}\setminus a_{i}^{+}
 \]
 
 \end_inset
@@ -804,8 +825,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 
 \begin_layout Standard
 \align center
-
-\lang ngerman
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
 <features tabularvalignment="middle">
@@ -846,8 +865,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $S_{2}$
 \end_inset
 
@@ -889,8 +906,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $y_{1}$
 \end_inset
 
@@ -903,8 +918,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $y_{2}$
 \end_inset
 
@@ -917,8 +930,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $y_{3}$
 \end_inset
 
@@ -933,8 +944,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $S_{1}$
 \end_inset
 
@@ -947,8 +956,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $x_{1}$
 \end_inset
 
@@ -961,8 +968,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $10,0$
 \end_inset
 
@@ -975,8 +980,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $10,0$
 \end_inset
 
@@ -989,8 +992,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $0,0$
 \end_inset
 
@@ -1014,8 +1015,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $x_{2}$
 \end_inset
 
@@ -1028,8 +1027,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $0,0$
 \end_inset
 
@@ -1042,8 +1039,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $0,0$
 \end_inset
 
@@ -1056,8 +1051,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $10,0$
 \end_inset
 
@@ -1081,8 +1074,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $x_{3}$
 \end_inset
 
@@ -1095,8 +1086,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $1,0$
 \end_inset
 
@@ -1109,8 +1098,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $1,0$
 \end_inset
 
@@ -1123,8 +1110,6 @@ In folgendem Beispiel ist dies nicht der Fall:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang ngerman
 \begin_inset Formula $1,0$
 \end_inset
 
