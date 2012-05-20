@@ -7,6 +7,9 @@
 \renewcommand{\labelenumi}{\alph{enumi})}
 \end_preamble
 \use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
 \maintain_unincluded_children false
 \language ngerman
 \language_package default
@@ -32,8 +35,8 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 0
-\use_esint 0
+\use_amsmath 1
+\use_esint 1
 \use_mhchem 1
 \use_mathdots 1
 \cite_engine basic
@@ -92,6 +95,98 @@ TODO
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection*
+(a) f konvex
+\end_layout
+
+\begin_layout Standard
+Annahme: f muss nicht konvex sein.
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $A=[0,1]$
+\end_inset
+
+ und 
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+0.7\, & für\,0\leq x\leq0.4\\
+\{0.7,0.3\} & für\, x=0.4\\
+0.3 & für\,0.4\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Die fünf anderen Bedingungen des Satzes sind erfüllt.
+\end_layout
+
+\begin_layout Standard
+Die Funktion besitzt jedoch keinen Fixpunkt.
+\end_layout
+
+\begin_layout Subsubsection*
+(b) f nicht-leer
+\end_layout
+
+\begin_layout Standard
+Annahme: f muss nicht nicht-leer sein.
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $A=[0,1]$
+\end_inset
+
+ und 
+\begin_inset Formula $f(x)=Ø$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Die fünf anderen Bedingungen des Satzes sind erfüllt.
+\end_layout
+
+\begin_layout Standard
+Die Funktion besitzt jedoch keinen Fixpunkt.
+\end_layout
+
+\begin_layout Subsubsection*
+(c) A kompakt
+\end_layout
+
+\begin_layout Standard
+Annahme: A muss nicht kompakt sein.
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $A=[0,\infty)$
+\end_inset
+
+ und 
+\begin_inset Formula $f(x)=x+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Die fünf anderen Bedingungen des Satzes sind erfüllt.
+\end_layout
+
+\begin_layout Standard
+Die Funktion besitzt jedoch keinen Fixpunkt.
 \end_layout
 
 \begin_layout Subsubsection*
