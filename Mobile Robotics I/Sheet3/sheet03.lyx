@@ -103,28 +103,44 @@ Gegeben:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(app\_blue|blue)=0.75$
+\begin_inset Formula 
+\[
+p(app\_blue|blue)=0.75
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(app\_green|blue)=0.25$
+\begin_inset Formula 
+\[
+p(app\_green|blue)=0.25
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(app\_blue|green)=0.25$
+\begin_inset Formula 
+\[
+p(app\_blue|green)=0.25
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(app\_green|green)=0.75$
+\begin_inset Formula 
+\[
+p(app\_green|green)=0.75
+\]
+
 \end_inset
 
 
@@ -135,7 +151,11 @@ Daraus ergibt sich:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(blue|app\_blue)=\frac{p(app\_blue|blue)\cdot p(blue)}{p(app\_blue|blue)\cdot p(blue)+p(app\_blue|green)\cdot p(green)}$
+\begin_inset Formula 
+\[
+p(blue|app\_blue)=\frac{p(app\_blue|blue)\cdot p(blue)}{p(app\_blue|blue)\cdot p(blue)+p(app\_blue|green)\cdot p(green)}
+\]
+
 \end_inset
 
 
@@ -146,7 +166,11 @@ bzw.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(green|app\_blue)=\frac{p(app\_blue|green)\cdot p(green)}{p(app\_blue|blue)\cdot p(blue)+p(app\_blue|green)\cdot p(green)}$
+\begin_inset Formula 
+\[
+p(green|app\_blue)=\frac{p(app\_blue|green)\cdot p(green)}{p(app\_blue|blue)\cdot p(blue)+p(app\_blue|green)\cdot p(green)}
+\]
+
 \end_inset
 
 
@@ -265,7 +289,11 @@ Aufgabe 3:
 
 \begin_layout Standard
 Gesucht: 
-\begin_inset Formula $p(x_{t}=dirty|z_{t}=clean,\, u_{t-1}=vac-clean)$
+\begin_inset Formula 
+\[
+p(x_{t}=dirty|z_{t}=clean,\, u_{t-1}=vac-clean)
+\]
+
 \end_inset
 
 
@@ -335,20 +363,17 @@ Rechnung mit
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(x_{t}=dirty|z_{t}=clean,\, u_{t-1}=vac-clean)$
-\end_inset
-
-
-\begin_inset Formula $=Bel(x_{t}=dirty)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-=\eta\cdot p(z_{t}=clean|x_{t}=dirty)\cdot\left[p(x_{t}=dirty|u_{t-1}=vac-clean,x_{t-1}=dirty)\cdot Bel(x_{t}=dirty)+p(x_{t}=dirty|u_{t-1}=vac-clean,x_{t-1}=clean)\cdot Bel(x_{t}=clean)\right]
+p(x_{t}=dirty|z_{t}=clean,\, u_{t-1}=vac-clean)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=Bel(x_{t}=dirty)
 \]
 
 \end_inset
@@ -357,7 +382,33 @@ Rechnung mit
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\eta\cdot0.3\cdot\left[0.3\cdot1+0\cdot0\right]=\eta\cdot0.09$
+\begin_inset Formula 
+\[
+=\eta\cdot p(z_{t}=clean|x_{t}=dirty)\cdot(p(x_{t}=dirty|u_{t-1}=vac-clean,x_{t-1}=dirty)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cdot Bel(x_{t}=dirty)+p(x_{t}=dirty|u_{t-1}=vac-clean,x_{t-1}=clean)\cdot Bel(x_{t}=clean))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\eta\cdot0.3\cdot\left[0.3\cdot1+0\cdot0\right]=\eta\cdot0.09
+\]
+
 \end_inset
 
 
@@ -368,25 +419,52 @@ Analog:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $p(x_{t}=clean|z_{t}=clean,\, u_{t-1}=vac-clean)$
+\begin_inset Formula 
+\[
+p(x_{t}=clean|z_{t}=clean,\, u_{t-1}=vac-clean)
+\]
+
 \end_inset
 
 
-\begin_inset Formula $=Bel(x_{t}=clean)$
+\begin_inset Formula 
+\[
+=Bel(x_{t}=clean)
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\eta\cdot p(z_{t}=clean|x_{t}=clean)\cdot\left[p(x_{t}=clean|u_{t-1}=vac-clean,x_{t-1}=dirty)\cdot Bel(x_{t}=dirty)+p(x_{t}=clean|u_{t-1}=vac-clean,x_{t-1}=clean)\cdot Bel(x_{t}=clean)\right]$
+\begin_inset Formula 
+\[
+=\eta\cdot p(z_{t}=clean|x_{t}=clean)\cdot p(x_{t}=clean|u_{t-1}=vac-clean,x_{t-1}=dirty)
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\eta\cdot0.9\cdot\left[0.7\cdot1+1\cdot0\right]=\eta\cdot0.63$
+\begin_inset Formula 
+\[
+\cdot Bel(x_{t}=dirty)+p(x_{t}=clean|u_{t-1}=vac-clean,x_{t-1}=clean)\cdot Bel(x_{t}=clean)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\eta\cdot0.9\cdot\left[0.7\cdot1+1\cdot0\right]=\eta\cdot0.63
+\]
+
 \end_inset
 
 
@@ -401,7 +479,11 @@ Daraus ergibt sich für
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\eta=\frac{1}{0.09+0.63}=1.39$
+\begin_inset Formula 
+\[
+\eta=\frac{1}{0.09+0.63}=1.39
+\]
+
 \end_inset
 
 
