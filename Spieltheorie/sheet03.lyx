@@ -574,16 +574,6 @@ vs.
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1131,6 +1121,364 @@ kein Nash im gemischten Strategieprofil:
 
 vs.
 \begin_inset Formula $\left\{ X\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(l) 
+\begin_inset Formula $\left\{ B,S\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ B,S\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{1}((1,0),(\alpha_{2}(B),\alpha_{2}(S)))=U_{1}((0,1),(\alpha_{2}(B),\alpha_{2}(S)))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+4\cdot\alpha_{2}(B)=2\cdot\alpha_{2}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\cdot\alpha_{2}(B)=1-\alpha_{2}(B)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{2}(B)=\frac{1}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{2}(S)=1-\alpha_{2}(B)=\frac{2}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U_{2}((1,0),(\alpha_{1}(B),\alpha_{1}(S)))=U_{2}((0,1),(\alpha_{1}(B),\alpha_{1}(S)))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\cdot\alpha_{1}(B)=4\cdot\alpha_{1}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-\alpha_{1}(S)=2\cdot\alpha_{1}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}(S)=\frac{1}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}(B)=1-\alpha_{1}(S)=\frac{2}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(m) 
+\begin_inset Formula $\left\{ B,S\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ B,X\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{1}((1,0),(\alpha_{2}(B),\alpha_{2}(X)))=U_{1}((0,1),(\alpha_{2}(B),\alpha_{2}(X)))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+4\cdot\alpha_{2}(B)=\alpha_{2}(X)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+4\cdot\alpha_{2}(B)=1-\alpha_{2}(B)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{2}(B)=\frac{1}{5}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{2}(S)=1-\alpha_{2}(B)=\frac{4}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{2}((1,0),(\alpha_{1}(B),\alpha_{1}(S)))=U_{2}((0,1),(\alpha_{1}(B),\alpha_{1}(S)))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\cdot\alpha_{1}(B)=\alpha_{1}(B)+3\cdot\alpha_{1}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-\alpha_{1}(S)=3\cdot\alpha_{1}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}(S)=\frac{1}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}(B)=1-\alpha_{1}(S)=\frac{3}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(n) 
+\begin_inset Formula $\left\{ B,S\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ S,X\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{1}((1,0),(\alpha_{2}(S),\alpha_{2}(X)))=U_{1}((0,1),(\alpha_{2}(S),\alpha_{2}(X)))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=2\cdot\alpha_{2}(S)+\alpha_{2}(X)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+kein Nash im gemischten Strategieprofil: 
+\begin_inset Formula $\left\{ B,S\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ S,X\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(o) 
+\begin_inset Formula $\left\{ B,S\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ B,S,X\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{2}((1,0,0),(\alpha_{1}(B),\alpha_{1}(S)))=U_{2}((0,1,0),(\alpha_{1}(B),\alpha_{1}(S)))=U_{2}((0,0,1),(\alpha_{1}(B),\alpha_{1}(S)))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\cdot\alpha_{1}(B)=4\cdot\alpha_{1}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-\alpha_{1}(S)=2\cdot\alpha_{1}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}(S)=\frac{1}{3}\;\textrm{(Gl.\,1)}
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula 
+\[
+\Rightarrow1-\alpha_{1}(S)=2\cdot\alpha_{1}(S)=1-\alpha_{1}(S)+3\cdot\alpha_{1}(S)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-\frac{1}{3}=2\cdot\frac{1}{3}=1-\frac{1}{3}+3\cdot\frac{1}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{2}{3}=\frac{2}{3}=\frac{5}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+kein Nash im gemischten Strategieprofil: 
+\begin_inset Formula $\left\{ B,S\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ B,S,X\right\} $
 \end_inset
 
 
