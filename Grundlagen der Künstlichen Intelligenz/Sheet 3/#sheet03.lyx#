@@ -201,49 +201,7 @@ Binäre Constraints:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $C_{8v,1h}=\{<RAM,ZUHOERER>,<ROT,ZUHOERER>\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $C_{5v,11h}=\{<EIER,IE>,<EIER,IM>,<EIER,IT>,<HOLZ,ON>\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $C_{1v,14h}=\{<ZAR,ROLLE>\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $C_{14h,15v}=\{<ROLLE,ON>\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $C_{19h,19v}=\{<IE,IM>,<IM,IE>,<IE,IT>,<IT,IE>,<IM,IT>,<IT,IM>\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $C_{15v,21h}=\{<ON,NZ>\}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $C_{5v,23h}=\{<EIER,RAM>,<EIER,ROT>,<HOLZ,ZAR>\}$
+\begin_inset Formula $C_{8v,1h}=\{<RAM,ZUHOERER>,<>\}$
 \end_inset
 
 
