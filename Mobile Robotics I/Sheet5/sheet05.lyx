@@ -91,21 +91,33 @@ Aufgabe 1:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $E[X]=\int_{-c}^{c}\frac{1}{2c}xdx=\frac{1}{2c}\int_{-c}^{c}xdx=\frac{1}{4c}[x^{2}]_{-c}^{c}=0$
+\begin_inset Formula 
+\[
+E[X]=\int_{-c}^{c}\frac{1}{2c}xdx=\frac{1}{2c}\int_{-c}^{c}xdx=\frac{1}{4c}[x^{2}]_{-c}^{c}=0
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $E[X^{2}]=\int_{-c}^{c}\frac{1}{2c}x^{2}dx=\frac{1}{2c}\int_{-c}^{c}x^{2}dx=\frac{1}{3c}[x^{3}]_{-c}^{c}=\frac{c^{3}}{3}$
+\begin_inset Formula 
+\[
+E[X^{2}]=\int_{-c}^{c}\frac{1}{2c}x^{2}dx=\frac{1}{2c}\int_{-c}^{c}x^{2}dx=\frac{1}{3c}[x^{3}]_{-c}^{c}=\frac{c^{3}}{3}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sigma{}^{2}=E[X^{2}]-E[X]=\frac{c^{3}}{3}$
+\begin_inset Formula 
+\[
+\sigma{}^{2}=E[X^{2}]-E[X]=\frac{c^{3}}{3}
+\]
+
 \end_inset
 
 
@@ -116,42 +128,66 @@ Aufgabe 1:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $E[X]=\int_{-c}^{0}\frac{c+x}{c^{2}}xdx+\int_{0}^{c}\frac{c-x}{c^{2}}xdx=\frac{1}{c}\int_{-c}^{0}xdx+\frac{1}{c^{2}}\int_{-c}^{0}x^{2}dx+\frac{1}{c}\int_{0}^{c}xdx-\frac{1}{c^{2}}\int_{0}^{c}x^{2}dx=0$
+\begin_inset Formula 
+\[
+E[X]=\int_{-c}^{0}\frac{c+x}{c^{2}}xdx+\int_{0}^{c}\frac{c-x}{c^{2}}xdx=\frac{1}{c}\int_{-c}^{0}xdx+\frac{1}{c^{2}}\int_{-c}^{0}x^{2}dx+\frac{1}{c}\int_{0}^{c}xdx-\frac{1}{c^{2}}\int_{0}^{c}x^{2}dx=0
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $E[X^{2}]=\int_{-c}^{0}\frac{c+x}{c^{2}}x^{2}dx+\int_{0}^{c}\frac{c-x}{c^{2}}x^{2}dx$
+\begin_inset Formula 
+\[
+E[X^{2}]=\int_{-c}^{0}\frac{c+x}{c^{2}}x^{2}dx+\int_{0}^{c}\frac{c-x}{c^{2}}x^{2}dx
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{1}{c}[\int_{-c}^{0}x^{2}dx+\int_{0}^{c}x^{2}dx]+\frac{1}{c^{2}}[\int_{-c}^{0}x^{3}dx-\int_{0}^{c}x^{3}dx]$
+\begin_inset Formula 
+\[
+=\frac{1}{c}[\int_{-c}^{0}x^{2}dx+\int_{0}^{c}x^{2}dx]+\frac{1}{c^{2}}[\int_{-c}^{0}x^{3}dx-\int_{0}^{c}x^{3}dx]
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{2}{c}\int_{-c}^{c}x^{2}dx+\frac{2}{c^{2}}\int_{-c}^{c}x^{3}dx$
+\begin_inset Formula 
+\[
+=\frac{2}{c}\int_{-c}^{c}x^{2}dx+\frac{2}{c^{2}}\int_{-c}^{c}x^{3}dx
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\frac{2c^{2}}{3}-\frac{c^{2}}{2}=\frac{c^{2}}{6}$
+\begin_inset Formula 
+\[
+=\frac{2c^{2}}{3}-\frac{c^{2}}{2}=\frac{c^{2}}{6}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sigma{}^{2}=E[X^{2}]-E[X]=0$
+\begin_inset Formula 
+\[
+\sigma{}^{2}=E[X^{2}]-E[X]=0
+\]
+
 \end_inset
 
 
@@ -163,6 +199,125 @@ Aufgabe 2:
 
 \begin_layout Subsubsection*
 (a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+sin(\theta-90\text{°})=-cos(\theta)=\frac{y-y_{c}}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow y-y_{c}=-r\cdot cos(\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow y_{c}-y=r\cdot cos(\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow y_{c}=y+r\cdot cos(\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+cos(\theta-90\text{°})=sin(\theta)=\frac{x-x_{c}}{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow x-x_{c}=r\cdot sin(\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow x_{c}-x=-r\cdot sin(\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow x_{c}=x-r\cdot sin(\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=\frac{v}{\omega}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow\left(\begin{array}{c}
+x_{c}\\
+y_{c}
+\end{array}\right)=\left(\begin{array}{c}
+x\\
+y
+\end{array}\right)+\left(\begin{array}{c}
+-\frac{v}{\omega}\cdot sin(\theta)\\
+\frac{v}{\omega}\cdot cos(\theta)
+\end{array}\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
