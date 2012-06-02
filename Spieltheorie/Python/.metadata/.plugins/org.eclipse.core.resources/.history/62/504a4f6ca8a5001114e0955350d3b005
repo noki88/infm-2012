@@ -1,0 +1,13 @@
+'''
+Created on 24.05.2012
+
+@author: stefan
+'''
+
+from lp_solve import * 
+from lpsolve55 import *
+
+f=[30,40]
+A=[[25,75],[60,60],[68,34]]
+b=[450,480,476]
+lp = lp_maker(f,A,)

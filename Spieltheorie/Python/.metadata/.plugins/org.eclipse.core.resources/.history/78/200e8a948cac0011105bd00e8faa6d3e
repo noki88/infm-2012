@@ -1,0 +1,19 @@
+'''
+Created on 02.06.2012
+'''
+
+import re
+
+class NfgReader(object):
+    
+    def read(self, filename):
+        game_title = re.search('(?<=")\w+.*?(?=")', s).group(0)
+        player_names = re.search('(?={).*?(?=})', s).group(0) + "}"
+        player_names = player_names.replace('{', '[').replace('}', ']').replace('" "', '","')
+        player_names = eval(player_names)
+        strategies = re.findall('{.{.*?}.}',s,re.DOTALL)[0]
+        payoffs = re.findall('{.{.*?}.}',s,re.DOTALL)[1]
+        outcomes = re.search('(\d\s)+\d',s).group(0)
+        
+        
+    

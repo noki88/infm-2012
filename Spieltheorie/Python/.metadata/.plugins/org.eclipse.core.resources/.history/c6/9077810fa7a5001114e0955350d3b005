@@ -1,0 +1,10 @@
+'''
+Created on 24.05.2012
+
+@author: stefan
+'''
+
+from lp_solve import * 
+
+if __name__ == '__main__':
+    a

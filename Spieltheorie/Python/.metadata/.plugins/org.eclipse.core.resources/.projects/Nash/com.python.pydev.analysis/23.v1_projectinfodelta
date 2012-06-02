@@ -1,0 +1,12 @@
+INSTUPTwoPlayerStrategicGame
+/home/stefan/infm-2012/Spieltheorie/Python/Nash/uebungsblattP1/TwoPlayerStrategicGame.py
+INFOS:&&1|1|1|0&&2|2|1|1&&3|3|1|4&&3|5|1|4&&3|6|1|4&&3|7|1|4&&3|8|1|4&&2|9|1|1
+strategies=6
+outcomes=8
+__init__=2
+TwoPlayerStrategicGame=1
+TwoPlayerStrategicGame.__init__=4
+game_title=3
+player_names=5
+payoffs=7
+__str__=9
