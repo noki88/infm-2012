@@ -36,9 +36,3 @@ class LcpSolver(object):
     def solve(self):
         return lp_solve(self.optfunc,self.lhs,self.rhs,self.rel,None, None, None, 1, 0)
         
-
-    
-        
-        
-        
-    

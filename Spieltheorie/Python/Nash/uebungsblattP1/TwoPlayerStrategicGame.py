@@ -20,4 +20,12 @@ class TwoPlayerStrategicGame(object):
         s += "\nOutcomes: " + self.outcomes.__str__()
         return s
     
+    def getPayoffMatrix(self):
+        matrix = []
+        for i in range(len(self.strategies[0])):
+            row = []
+            for j in range(len(self.strategies[1])):
+                row.append(self.payoffs[self.outcomes[i*len(self.strategies[1])+j]-1])
+            matrix.append(row)
+        return matrix
         
