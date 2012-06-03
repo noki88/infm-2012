@@ -28,6 +28,7 @@ class LcpSolver(object):
         self.lhs.append(lhs)
         self.rel.append(rel)
         self.rhs.append(rhs)
+        #print str(lhs) + " " + str(rel) + " " + str(rhs)
         
     def setOptfunc(self, optfunc):
         self.optfunc = optfunc
@@ -38,19 +39,21 @@ class LcpSolver(object):
 
 def main():
     l = LcpSolver()
-    ''' (B,S) vs. (B,X) '''
-    '''                 u,      b(B),     b(X),     v,     a(B),    a(S) '''
-    l.addConstraint([   1,      -4,         0,     0,      0,      0], '=', 0) # SP1 spielt B 
-    l.addConstraint([   1,      0,         -2,      0,      0,      0], '=', 0) # SP1 spielt S 
-    l.addConstraint([   0,      0,          0,      1,      -2,     0], '=', 0) # SP2 spielt B 
-    l.addConstraint([   0,      0,          0,      1,      -1,    -3], '=', 0) # SP2 spielt X 
-    l.addConstraint([   0,      1,          0,      0,      0,      0], '>', 0)
-    l.addConstraint([   0,      0,          1,      0,      0,      0], '>', 0)
-    l.addConstraint([   0,      0,          0,      0,      1,      0], '>', 0)
-    l.addConstraint([   0,      0,          0,      0,      0,      1], '>', 0)
-    l.addConstraint([   0,      1,          1,      0,      0,      0], '=', 1)
-    l.addConstraint([   0,      0,          0,      0,      1,      1], '=', 1)
-    l.setOptfunc([      0,      0,          0,      0,      0,      0])
+    ''' (B,S) vs. (B,S,X) '''
+    '''                 u,      b(B),     b(S),    b(X),     v,     a(B),    a(S) '''
+    l.addConstraint([   1,      -4,       0,        0,     0,      0,      0], 0, 0) # SP1 spielt B 
+    l.addConstraint([   1,      0,       -2,        -1,      0,      0,      0], 1, 0) # SP1 spielt S 
+    l.addConstraint([   0,      0,        0,        0,      1,      -2,     0], 0, 0) # SP2 spielt B 
+    l.addConstraint([   0,      0,        0,        0,      1,      0,     -4], 1, 0) # SP2 spielt S 
+    l.addConstraint([   0,      0,        0,        0,      1,      -1,    -3], 1, 0) # SP2 spielt X 
+    l.addConstraint([   0,      1,        0,        0,      0,      0,      0], 1, 0)
+    l.addConstraint([   0,      0,        1,        0,      0,      0,      0], 0, 0)
+    l.addConstraint([   0,      0,        0,        1,      0,      0,      0], 0, 0)
+    l.addConstraint([   0,      0,        0,        0,      0,      1,      0], 1, 0)
+    l.addConstraint([   0,      0,        0,        0,      0,      0,      1], 0, 0)
+    l.addConstraint([   0,      1,        1,        1,      0,      0,      0], 0, 1)
+    l.addConstraint([   0,      0,        0,        0,      0,      1,      1], 0, 1)
+    l.setOptfunc([      0,      0,        0,        0,      0,      0,      0])
     x = l.solve()
     print x
     
