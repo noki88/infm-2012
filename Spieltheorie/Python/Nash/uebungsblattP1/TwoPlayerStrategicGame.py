@@ -62,7 +62,7 @@ class TwoPlayerStrategicGame(object):
         return nash
     
     def findMixedNash(self, oneNash = False):
-        print "\n",self.getPayoffMatrix()
+        #print "\n",self.getPayoffMatrix()
         solver = GameSolver(self.getPayoffMatrix())
-        print solver.findNash(oneNash)
+        #print solver.findNash(oneNash)
         return solver.findNash(oneNash)

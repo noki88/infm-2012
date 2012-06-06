@@ -129,7 +129,7 @@ class GameSolver(object):
         lcpSolver.setOptfunc(optfunc)
         
         sol = lcpSolver.solve()
-        print sol
+        #print sol
         return sol[1]
             
                 

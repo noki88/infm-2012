@@ -32,8 +32,8 @@ class NfgReader(object):
             return StrategicGame(game_title=game_title, player_names=player_names, strategies=strategies, payoffs=payoffs, outcomes=outcomes)
 
 def main():
-    #statistics()
-    #return
+    statistics()
+    return
     games = os.listdir("../games/")
     games = ["airstrike.nfg"]
     for file in games:
@@ -44,25 +44,6 @@ def main():
             print "Time: " + str(time.time() - startTime) + " ", game.findMixedNash(oneNash = False)
         else:
             print "Time: " + str(time.time() - startTime) + " ", game.findPureNash()
-        print "-----------------------------------------------------------"
-    
-def statistics():
-    games = os.listdir("../games/")
-    runs = 10
-    games = ["bosx.nfg"]
-    for file in games:
-        game = NfgReader().read(filename="../games/" + file)
-        print game.game_title
-        print game.getPayoffMatrix()
-        alltime = 0
-        for i in range(runs):
-            startTime = time.time()
-            if isinstance(game, TwoPlayerStrategicGame):
-                game.findMixedNash(oneNash = False)
-            else:
-                game.findPureNash()
-            alltime += time.time() - startTime
-        print "Time: " + str(alltime/runs) + " ", 
         print "-----------------------------------------------------------"
         
     
