@@ -17,23 +17,31 @@ class GameSolver(object):
         '''
         self.outcomes = outcomes
         
-    def findNash(self):
+    def findNash(self, oneNash=False):
         supps1 = self.getSupport(1)
         supps2 = self.getSupport(2)
+        allSolutions = []
         for supp1 in supps1:
             for supp2 in supps2:
                 sol = self.solve(supp1,supp2)
+                currentSolution = {"Spieler 1":{},"Spieler 2":{}}
                 if len(sol) != 0:
-                    print "Spieler 1:"
+                    allSolutions.append(currentSolution)
+                    #output = ""
+                    #print "Spieler 1:"
                     for s in supp1:
-                        print "\t" + str(s) + " -> " + str(sol[len(self.outcomes[0])+2+s])
-                    print "\tPayoff: " + str(sol[0])
-                    print "Spieler 2:"
+                        currentSolution["Spieler 1"][s] = sol[len(self.outcomes[0])+2+s]
+                        #print "\t" + str(s) + " -> " + str(sol[len(self.outcomes[0])+2+s])
+                    #print "\tPayoff: " + str(sol[0])
+                    #print "Spieler 2:"
                     for s in supp2:
-                        print "\t" + str(s) + " -> " + str(sol[1+s])
-                    print "\tPayoff: " + str(sol[len(self.outcomes[0])+1])
-                    print ""
-
+                        currentSolution["Spieler 2"][s] = sol[1+s]
+                        #print "\t" + str(s) + " -> " + str(sol[1+s])
+                    #print "\tPayoff: " + str(sol[len(self.outcomes[0])+1])
+                    #print ""
+                    if oneNash:
+                        return allSolutions
+        return allSolutions
                 
     def solve(self,supp1,supp2):
         lcpSolver = LcpSolver()
@@ -121,7 +129,7 @@ class GameSolver(object):
         lcpSolver.setOptfunc(optfunc)
         
         sol = lcpSolver.solve()
-        #print sol
+        print sol
         return sol[1]
             
                 
