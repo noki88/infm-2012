@@ -32,8 +32,6 @@ class NfgReader(object):
             return StrategicGame(game_title=game_title, player_names=player_names, strategies=strategies, payoffs=payoffs, outcomes=outcomes)
 
 def main():
-    statistics()
-    return
     games = os.listdir("../games/")
     games = ["airstrike.nfg"]
     for file in games:

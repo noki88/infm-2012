@@ -12,7 +12,7 @@ import time
 def statistics():
     games = os.listdir("../games/")
     runs = 10
-    games = ["bosx.nfg"]
+    games = ["stengel.nfg"]
     for file in games:
         game = NfgReader().read(filename="../games/" + file)
         print game.game_title
