@@ -3,6 +3,7 @@ Created on 03.06.2012
 
 @author: stefan
 '''
+
 from NfgReader import NfgReader
 from TwoPlayerStrategicGame import TwoPlayerStrategicGame
 import os

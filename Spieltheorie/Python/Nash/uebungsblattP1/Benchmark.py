@@ -3,8 +3,8 @@ Created on 06.06.2012
 
 @author: stefan
 '''
+
 from NfgReader import NfgReader
-from TwoPlayerStrategicGame import TwoPlayerStrategicGame
 import os
 import time
 
@@ -12,7 +12,7 @@ import time
 def statistics():
     games = os.listdir("../games/")
     runs = 10
-    games = ["stengel.nfg"]
+    #games = ["stengel.nfg"]
     for file in games:
         game = NfgReader().read(filename="../games/" + file)
         print game.game_title
@@ -33,15 +33,15 @@ def statistics():
             alltime += time.time() - startTime
         print "Time: " + str(alltime/runs) + "\n"
         
-        '''
+        
         print "Computing one NE with gambit...",
         alltime = 0
         for i in range(runs):
             startTime = time.time()
-            os.system("gambit-enummixed -S " + "< ../games/" + file)
+            os.system("gambit-simpdiv -q -S " + "< ../games/" + file + " > /dev/null")
             alltime += time.time() - startTime
         print "Time: " + str(alltime/runs) + "\n"
-        '''
+        
         
         print "Computing all NE with gambit...",
         alltime = 0

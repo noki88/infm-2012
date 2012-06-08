@@ -1,7 +1,7 @@
 '''
 Created on 02.06.2012
 '''
-from GameSolver import GameSolver
+from uebungsblattA4.GameSolver import GameSolver
 
 class TwoPlayerStrategicGame(object):
 
@@ -38,9 +38,6 @@ class TwoPlayerStrategicGame(object):
             for i in range(len(self.strategies[0])):
                 matrix[i].append(self.payoffs[self.outcomes[j*len(self.strategies[0])+i]])
                 #print str(self.outcomes[j*len(self.strategies[0])+i])
-
-
-        #return zip(*matrix)
         return matrix
 
     def findPureNash(self):
