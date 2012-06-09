@@ -199,7 +199,7 @@ status open
 \begin_inset Formula $u_{1}(O(s^{*}))=10$
 \end_inset
 
-,
+, 
 \begin_inset Formula $u_{2}(O(s^{*}))=0$
 \end_inset
 
@@ -217,8 +217,21 @@ status open
 \begin_inset Formula $u_{1}(O(r^{*}))=5$
 \end_inset
 
-,
+, 
 \begin_inset Formula $u_{2}(O(r^{*}))=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d.h.
+  
+\begin_inset Formula $u_{i}(O(s^{*}))\neq u_{i}(O(r^{*}))$
+\end_inset
+
+ für 
+\begin_inset Formula $i=1$
 \end_inset
 
 
