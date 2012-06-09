@@ -1,0 +1,244 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "captionpos=b"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Spieltheorie - Übungsblatt 5
+\end_layout
+
+\begin_layout Standard
+\align center
+Stefan Wrobel, Viktor Kurz
+\begin_inset Newline newline
+\end_inset
+
+{wrobels,kurzv}@informatik.uni-freiburg.de
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 1: 
+\end_layout
+
+\begin_layout Standard
+Sind in einem extensiven Zweipersonenspiel die Auszahlungen an allen Blattknoten
+ unterschiedlich, so wird durch Rückwärtsinduktion immer ein eindeutiges
+ teilspielperfektes Gleichgewicht ermittelt.
+ Mehrere teilspielperfekte Gleichgewichte (TSP) kann es also nur dann geben,
+ wenn die Auszahlung für einen Spieler an mindestens zwei Blattknoten identisch
+ ist.
+ Hat ein Spieler in einem Teilspiel mehrere Strategien zur Auswahl, die
+ für diesen Spieler zur selben Auszahlung führen, so ist es egal, welche
+ Strategie gewählt wird.
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+ die Auszahlung des Spielers 
+\begin_inset Formula $1$
+\end_inset
+
+ und 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ die Auszahlung des Spielers 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+(a) 
+\end_layout
+
+\begin_layout Standard
+Bei Nullsummenspielen gilt: 
+\begin_inset Formula $u_{1}=-u_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Da zwei TSP 
+\begin_inset Formula $s^{*}$
+\end_inset
+
+und 
+\begin_inset Formula $r^{*}$
+\end_inset
+
+ in einem extensiven Zweipersonenspiel nur dann existieren können, wenn
+ es für einen Spieler (mindestens) zwei Blattknoten mit identischer Auszahlung
+ 
+\begin_inset Formula $u_{1}^{*}$
+\end_inset
+
+gibt, muss die Auszahlung für den anderen Spieler in beiden TSP 
+\begin_inset Formula $u_{2}^{*}=-u_{1}^{*}$
+\end_inset
+
+sein.
+\end_layout
+
+\begin_layout Subsubsection*
+(b) 
+\end_layout
+
+\begin_layout Standard
+Annahme: 
+\begin_inset Formula $u_{i}(O(s^{*}))=u_{i}(O(r^{*}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gegenbeispiel:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /media/Daten_/Studium/Uni Freiburg Master Informatik/Spieltheorie/Übungen/SS2012/Aufgabe5_1-b.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s^{*}=(1,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}(O(s^{*}))=10$
+\end_inset
+
+,
+\begin_inset Formula $u_{2}(O(s^{*}))=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{*}=(2,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}(O(r^{*}))=5$
+\end_inset
+
+,
+\begin_inset Formula $u_{2}(O(r^{*}))=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 2: 
+\end_layout
+
+\begin_layout Subsubsection*
+(a) 
+\end_layout
+
+\begin_layout Subsubsection*
+(b) 
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 3: 
+\end_layout
+
+\end_body
+\end_document

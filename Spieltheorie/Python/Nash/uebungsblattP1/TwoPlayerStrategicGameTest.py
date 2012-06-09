@@ -79,7 +79,6 @@ class Test(unittest.TestCase):
             self.assertEquals(payoffMatrix, game.getPayoffMatrix())
         
     def testFindPureNash(self):
-        pass
         game_title = "Test Game"
         player_names = ["Sp1", "Sp2"]
         strategies = [["S11", "S12"],["S21", "S22"]]
