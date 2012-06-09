@@ -133,7 +133,7 @@ Da zwei TSP
 \begin_inset Formula $s^{*}$
 \end_inset
 
-und 
+ und 
 \begin_inset Formula $r^{*}$
 \end_inset
 
@@ -143,11 +143,11 @@ und
 \begin_inset Formula $u_{1}^{*}$
 \end_inset
 
-gibt, muss die Auszahlung für den anderen Spieler in beiden TSP 
+ gibt, muss die Auszahlung für den anderen Spieler in beiden TSP 
 \begin_inset Formula $u_{2}^{*}=-u_{1}^{*}$
 \end_inset
 
-sein.
+ sein.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -176,7 +176,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Aufgabe5_1-b.png
-	width 80col%
+	width 50col%
 
 \end_inset
 
