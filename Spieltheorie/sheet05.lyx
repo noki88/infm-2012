@@ -226,7 +226,7 @@ status open
 
 \begin_layout Standard
 d.h.
-  
+ 
 \begin_inset Formula $u_{i}(O(s^{*}))\neq u_{i}(O(r^{*}))$
 \end_inset
 
@@ -234,7 +234,21 @@ d.h.
 \begin_inset Formula $i=1$
 \end_inset
 
+,
+\end_layout
 
+\begin_layout Standard
+d.h.
+ die Annahme ist falsch,
+\end_layout
+
+\begin_layout Standard
+d.h.
+ 
+\begin_inset Formula $u_{i}(O(s^{*}))=u_{i}(O(r^{*}))$
+\end_inset
+
+ gilt im Allgemeinen nicht.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -247,6 +261,143 @@ Aufgabe 2:
 
 \begin_layout Subsubsection*
 (b) 
+\end_layout
+
+\begin_layout Standard
+Annahme: 
+\begin_inset Formula $u_{1}(O(s^{*}))\leq u_{1}(O(r^{*}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gegenbeispiel:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Aufgabe5_2-b1.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Spieler 1 wählt zuerst:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Aufgabe5_2-b2.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s^{*}=(2,21)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}(O(s^{*}))=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Spieler 2 wählt zuerst:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Aufgabe5_2-b3.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{*}=(22,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{1}(O(r^{*}))=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d.h.
+ 
+\begin_inset Formula $u_{1}(O(s^{*}))>u_{1}(O(r^{*}))$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+d.h.
+ die Annahme ist falsch,
+\end_layout
+
+\begin_layout Standard
+d.h.
+ 
+\begin_inset Formula $u_{1}(O(s^{*}))\leq u_{1}(O(r^{*}))$
+\end_inset
+
+ gilt im Allgemeinen nicht.
 \end_layout
 
 \begin_layout Subsubsection*
