@@ -5,6 +5,9 @@
 \textclass article
 \begin_preamble
 \renewcommand{\labelenumi}{\alph{enumi})}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{rotating}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -401,7 +404,791 @@ d.h.
 \end_layout
 
 \begin_layout Subsubsection*
-Aufgabe 3: 
+Aufgabe 3:
+\end_layout
+
+\begin_layout Standard
+Der Pirat mit dem höchsten Rang wird bei der Abstimmung immer für das Töten
+ stimmen, da er somit seinen Nutzen maximiert.
+ Der Priat mit dem zweit höchsten Rang wird immer für das Töten stimmen,
+ außer die Anzahl der noch lebenden Priaten liegt bei 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Die Piraten mit dem Rang 
+\begin_inset Formula $3$
+\end_inset
+
+ und 
+\begin_inset Formula $4$
+\end_inset
+
+ würden immer für das Töten stimmen, außer die Anzahl der noch lebenden
+ Priaten liegt bei 
+\begin_inset Formula $\leq4$
+\end_inset
+
+.
+ Falls die Anzahl der noch lebenden Priaten bei 
+\begin_inset Formula $4$
+\end_inset
+
+ liegt, würden sich die Priaten mit dem Rang 
+\begin_inset Formula $3$
+\end_inset
+
+ und 
+\begin_inset Formula $4$
+\end_inset
+
+ für das Aufteilen entscheiden, da der hoch propagierte Nutzenwert für die
+ Aktion Töten für beide Piraten bei 0 liegt.
+ Somit ergibt sich folgender Baum:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="10">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset space \hspace{}
+\length 8mm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{512-mal}{\underbrace{\frac{1}{512},...,\frac{1}{512}}},\underset{488-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{256-mal}{\underbrace{\frac{1}{256},...,\frac{1}{256}}},\underset{744-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{128-mal}{\underbrace{\frac{1}{128},...,\frac{1}{128}}},\underset{872-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{64-mal}{\underbrace{\frac{1}{64},...,\frac{1}{64}}},\underset{936-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{32-mal}{\underbrace{\frac{1}{32},...,\frac{1}{32}}},\underset{968-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{16-mal}{\underbrace{\frac{1}{16},...,\frac{1}{16}}},\underset{984-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{8-mal}{\underbrace{\frac{1}{8},...,\frac{1}{8}}},\underset{992-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "r"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "11mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\underset{4-mal}{\underbrace{\frac{1}{4},...,\frac{1}{4}}},\underset{996-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width "15mm"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{\frac{1}{2},\frac{1}{2},\underset{998-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sideways}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $U=\{1,\underset{999-mal}{\underbrace{0,...,0}}\}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sideways}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Sheet5/5_3.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Aufteilung des Schatzes würde demnach wie folgt ablaufen: es würden
+ 512 Piraten immer wieder für das Töten stimmen, bis die Anzahl der noch
+ lebenden Piraten bei 512 liegt.
+ Dann würden die Piraten mit dem Rang 257 bis 512 sich für das Aufteilen
+ entscheiden, da der hoch propagierte Nutzenwert für die Aktion Töten jeweils
+ 0 ist.
+ Somit überleben 512 Piraten.
 \end_layout
 
 \end_body
