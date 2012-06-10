@@ -498,6 +498,13 @@ Der Pirat mit dem höchsten Rang wird bei der Abstimmung immer für das Töten
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1232,6 +1239,9 @@ end{sideways}
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
 Die Aufteilung des Schatzes würde demnach wie folgt ablaufen: es würden
  512 Piraten immer wieder für das Töten stimmen, bis die Anzahl der noch
  lebenden Piraten bei 512 liegt.
