@@ -262,6 +262,56 @@ Aufgabe 2:
 (a) 
 \end_layout
 
+\begin_layout Standard
+In 
+\begin_inset Formula $\Gamma_{1}$
+\end_inset
+
+ wählt Spieler 2 immer diejenige Strategie, bei dem die gewählten Aktionen
+ jeweils die besten Antworten auf die vorherige Aktion von Spieler 1 ist.
+ Da es ein Nullsummenspiel ist, ist die gewählte Strategie diejenige Strategie,
+ die den Nutzen von Spieler 1 also jeweils minimiert.
+ Spieler 1 wählt demnach diejenige Aktion aus, die den minimalen Nutzen
+ maximiert.
+ Es gilt also: 
+\begin_inset Formula $u_{1}(O(s^{*}))=\max\limits _{a_{1}\in A_{1}}\min\limits _{a_{2}\in A_{2}}u_{1}(a_{1},a_{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Analog in 
+\begin_inset Formula $\Gamma_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $u_{2}(O(r^{*}))=\max\limits _{a_{2}\in A_{2}}\min\limits _{a_{1}\in A_{1}}u_{2}(a_{1},a_{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Da Nullsummenspiel: 
+\begin_inset Formula $u_{1}(O(r^{*}))=-\max\limits _{a_{2}\in A_{2}}\min\limits _{a_{1}\in A_{1}}u_{2}(a_{1},a_{2})=\min\limits _{a_{2}\in A_{2}}(-\min\limits _{a_{1}\in A_{1}}u_{2}(a_{1},a_{2}))=\min\limits _{a_{2}\in A_{2}}\max\limits _{a_{1}\in A_{1}}(-u_{2}(a_{1},a_{2}))=\min\limits _{a_{2}\in A_{2}}\max\limits _{a_{1}\in A_{1}}u_{1}(a_{1},a_{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Da 
+\begin_inset Formula $\max\limits _{a_{1}\in A_{1}}\min\limits _{a_{2}\in A_{2}}u_{1}(a_{1},a_{2})\leq\min\limits _{a_{2}\in A_{2}}\max\limits _{a_{1}\in A_{1}}u_{1}(a_{1},a_{2})$
+\end_inset
+
+ ist 
+\begin_inset Formula $u_{1}(O(s^{*}))\leq u_{1}(O(r^{*}))$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 (b) 
 \end_layout
