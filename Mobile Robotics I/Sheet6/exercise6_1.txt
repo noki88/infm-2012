@@ -1,0 +1,26 @@
+Gegeben: Messung z = (z_r, z_t)^T (Distanz z_r, Richtung z_t)
+Gesucht: Sensor Modell p(z|x,l) mit x = (x, y, theta)^T, l = (x, y)^T
+
+sensor_model p = (z, x, y):
+
+1) Berechnung der tatsächlichen Distanz zwischen Roboter und Landmark:
+
+  dist = sqrt((l.x - x.x)^2 + (l.y - x.y)^2)
+
+2) Berechnung des tatsächlichen Winkels zwischen Roboter und Landmark:
+  
+  angle = atan2(l.y - x.y, l.x - x.x) - x.theta
+
+3) Wahrscheinlichkeit für die Messung z_r über Gaußverteilung mit Mittelwert = 0, Varianz var_r an der Stelle (dist - z.z_r)
+
+  p1 = normpdf(dist - z.z_r, 0, var_r)
+
+
+4) Wahrscheinlichkeit für die Messung z_t über Gaußverteilung mit Mittelwert = 0, Varianz var_t an der Stelle (angle - z.z_t)
+
+  p2 = normpdf(angle - z.z_t, 0, var_t)
+
+
+5) Beide Messwerte sind unabhängig, daher multipliziere die Wahrscheinlichkeiten:
+
+   return p1 * p2
