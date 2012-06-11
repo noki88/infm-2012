@@ -11,13 +11,19 @@ function weight = measurement_model(z, x, l)
 
     if size(z, 2) == 0
         return
-    endif
+    endif 
     
     for i = 1:size(z, 2)
         landmark_position = [l(z(i).id).x, l(z(i).id).y];
         measurement_range = [z(i).range];
+        
+        for j = 1:size(x, 1)
+	  dist = sqrt((x(j,1)-landmark_position(1))*(x(j,1)-landmark_position(1)) + (x(j,2)-landmark_position(2))*(x(j,2)-landmark_position(2)));
+	  prob = normpdf(dist - measurement_range, 0, sigma(1));
+	  weight(j) = weight(j) * prob;
+	endfor
 
-        %% TODO: compute weight
+        %% TODO: use matrix operations
     endfor
 
     weight = weight ./ size(z, 2);
