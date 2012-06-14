@@ -1,8 +1,8 @@
 Voraussetzung:
-lp_solve f√ºr Python muss installiert sein:
+lp_solve für Python muss installiert sein:
 http://lpsolve.sourceforge.net/5.5/Python.htm#Compile_the_lpsolve_driver
 
-Ausf√ºhrung:
+Ausführung:
 P1.1 (Einlesen von NFG-Dateien, API):
 ...
 game = NfgReader.read(PfadZurNfg)
@@ -19,4 +19,4 @@ game.findMixedNash()
 ...
 
 Lesen, NG-Berechnung, Zeitmessung:
-ausf√ºhren von "python P1Main <PfadZurNfg>" 
+ausführen von "python P1Main <PfadZurNfg>" 
