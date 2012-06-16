@@ -99,52 +99,171 @@ Aufgabe 1:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $N=(1,2)$
+\begin_inset Formula 
+\[
+N=(1,2)
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $H=\{<>,<NS>,<S>,<NS,NS>,<NS,S>,<S,T>,<S,KT>,<S,KT,NS>,<S,KT,S>,...\}=<(NS|S(T|KT))*>$
+\begin_inset Formula $H=\{<>,<NS>,<S>,<NS,NS>,<NS,S>,<S,T>,<S,KT>,<S,KT,NS>,<S,KT,S>,...\}=<(NS|S(T|KT))^{*}>$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(S = 
+\begin_inset Quotes eld
+\end_inset
+
+schiessen
+\begin_inset Quotes erd
+\end_inset
+
+, NS = 
+\begin_inset Quotes eld
+\end_inset
+
+nicht schiessen
+\begin_inset Quotes erd
+\end_inset
+
+, T = 
+\begin_inset Quotes eld
+\end_inset
+
+Treffer
+\begin_inset Quotes erd
+\end_inset
+
+, KT = 
+\begin_inset Quotes eld
+\end_inset
+
+kein Treffer
+\begin_inset Quotes erd
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(h)=\begin{cases}
+\begin_inset Formula 
+\[
+P(h)=\begin{cases}
 1 & h=(<...NS>\, oder\, h=<...KT>)\, und\, Anz(S,NS)\, in\, h\, gerade\\
 2 & h=(<...NS>\, oder\, h=<...KT>)\, und\, Anz(S,NS)\, in\, h\, ungerade\\
 c & h=<...S>
-\end{cases}$
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $f_{c}=\{T\mapsto p_{i},\, KT\mapsto1-p_{i}\}$
+\begin_inset Formula 
+\[
+f_{c}=\{T\mapsto p_{i},\, KT\mapsto1-p_{i}\}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $u_{1}=\begin{cases}
+\begin_inset Formula 
+\[
+u_{1}=\begin{cases}
 0 & h=<...T>\, und\, Anz(S,NS)\, in\, h\, gerade\\
 1 & sonst
-\end{cases}$
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $u_{2}=\begin{cases}
+\begin_inset Formula 
+\[
+u_{2}=\begin{cases}
 0 & h=<...T>\, und\, Anz(S,NS)\, in\, h\, ungerade\\
 1 & sonst
-\end{cases}$
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Aufgabe6_1.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Spielbaum, angedeutet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -155,7 +274,36 @@ c & h=<...S>
 \end_layout
 
 \begin_layout Standard
-TODO
+(i) Kein Spieler schießt: Wenn keiner der beiden Spieler jemals schießt,
+ dann haben beide Spieler eine Überlebenschance von 100%, d.h.
+ der langfristige Erwartungswert ist (1,1).
+ Würde einer der beiden Spieler von diesem Strategieprofil abweichen und
+ schießen, so verringert sich dadurch die Überlebenschance des anderen Spielers.
+ Die Überlebenswahrscheinlichkeite des Spielers, der geschossen hat, bleibt
+ jedoch unverändert.
+ Es kann sich also keiner der beiden Spieler verbessern, indem von der Strategie
+ 
+\begin_inset Quotes eld
+\end_inset
+
+nicht schießen
+\begin_inset Quotes erd
+\end_inset
+
+ jeweils abgewichen wird.
+ Es handelt sich daher um ein TPG.
+\end_layout
+
+\begin_layout Standard
+(ii) Beide Spieler schießen immer: Mit jedem Schuss des Spielers j verringert
+ sich die Überlebenschance des anderen Spielers i.
+ Möchte Spieler i seine Überlebenschance erhöhen, so kann er dies nur tun,
+ indem er die Überlebenschance von Spieler j verringert, d.h.
+ auf diesen schießt.
+ Schießt Spieler i einmal nicht, der andere Spieler j jedoch schon, so ist
+ die Überlebenschance für Spieler i geringer als in dem Fall, wenn er geschossen
+ hätte.
+ Es handelt sich daher um ein TPG, wenn beide Spieler immer schießen.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -163,7 +311,425 @@ Aufgabe 2:
 \end_layout
 
 \begin_layout Standard
-TODO
+Wenn 
+\begin_inset Formula $<\alpha_{d},\alpha_{a}>$
+\end_inset
+
+ in 
+\begin_inset Formula $G$
+\end_inset
+
+ ein NG ist, dann gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{d}(\alpha_{d},\alpha_{a})\geq U_{d}(\alpha_{d}',\alpha_{a})\forall\alpha_{d}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(\alpha_{d},\alpha_{a})\geq U_{a}(\alpha_{d},\alpha_{a}')\forall\alpha_{a}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn 
+\begin_inset Formula $<\alpha_{d},f(\alpha_{a})>$
+\end_inset
+
+ in 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ ein NG ist, dann gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{U_{d}}(\alpha_{d},f(\alpha_{a}))\geq\overline{U_{d}}(\alpha_{d}',f(\alpha_{a}))\forall\alpha_{d}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(\alpha_{d},f(\alpha_{a}))\geq U_{a}(\alpha_{d},f(\alpha_{a}'))\forall\alpha_{a}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zu zeigen ist, dass die beiden Paare von Ungleichungen äquivalent zueinander
+ sind.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{U}_{d}(\alpha_{d},f(\alpha_{a}))\geq\overline{U}_{d}(\alpha_{d}',f(\alpha_{a}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aus der Definition des erwarteten Nutzens:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}f(\alpha_{a})\cdot(c_{i}\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i})\cdot\overline{U_{d}^{u}}(t_{i}))\geq\sum_{i=1}^{n}f(\alpha_{a})\cdot(c_{i}'\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i}')\cdot\overline{U_{d}^{u}}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definition für 
+\begin_inset Formula $f(\alpha)$
+\end_inset
+
+ eingesetzt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\lambda\alpha_{a}(t_{i})\cdot\frac{\Delta\overline{U_{d}}(t_{i})}{\Delta\overline{U_{a}}(t_{i})}\cdot(c_{i}\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i})\cdot\overline{U_{d}^{u}}(t_{i}))\geq\sum_{i=1}^{n}\lambda\alpha_{a}(t_{i})\cdot\frac{\Delta\overline{U_{d}}(t_{i})}{\Delta\overline{U_{a}}(t_{i})}\cdot(c_{i}'\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i}')\cdot\overline{U_{d}^{u}}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+ ändert sich durch Division auf beiden Seiten die Ungleichung nicht:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot\frac{\Delta\overline{U_{d}}(t_{i})}{\Delta\overline{U_{a}}(t_{i})}\cdot(c_{i}\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i})\cdot\overline{U_{d}^{u}}(t_{i}))\geq\sum_{i=1}^{n}\alpha(t_{i})\cdot\frac{\Delta\overline{U_{d}}(t_{i})}{\Delta\overline{U_{a}}(t_{i})}\cdot(c_{i}'\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i}')\cdot\overline{U_{d}^{u}}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da NSS ist 
+\begin_inset Formula $\Delta\overline{U_{d}}(t_{i})=\Delta\overline{U_{a}}(t_{i})$
+\end_inset
+
+ und daher 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\frac{\Delta\overline{U_{d}}(t_{i})}{\Delta\overline{U_{a}}(t_{i})}=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot(c_{i}\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i})\cdot\overline{U_{d}^{u}}(t_{i}))\geq\sum_{i=1}^{n}\alpha(t_{i})\cdot(c_{i}'\cdot\overline{U_{d}^{c}}(t_{i})+(1-c_{i}')\cdot\overline{U_{d}^{u}}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Subtraktion von 
+\begin_inset Formula $\sum_{i=1}^{n}\overline{U_{d}^{u}}(t_{i})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot(c_{i}\cdot\overline{U_{d}^{c}}(t_{i})-c_{i}\cdot\overline{U_{d}^{u}}(t_{i}))\geq\sum_{i=1}^{n}\alpha(t_{i})\cdot(c_{i}'\cdot\overline{U_{d}^{c}}(t_{i})-c_{i}'\cdot\overline{U_{d}^{u}}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot c_{i}\cdot\Delta\overline{U_{d}}(t_{i})\geq\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot c_{i}'\cdot\Delta\overline{U_{d}}(t_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da 
+\begin_inset Formula $\Delta\overline{U_{d}}(t_{i})>0$
+\end_inset
+
+ ändert sich durch Division auf beiden Seiten die Ungleichung nicht:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot c_{i}\geq\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot c_{i}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analog Multiplikation mit 
+\begin_inset Formula $\Delta U_{d}=U_{d}^{c}-U_{d}^{u}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot(c_{i}\cdot U_{d}^{c}(t_{i})-c_{i}\cdot U_{d}^{u}(t_{i}))\geq\sum_{i=1}^{n}\alpha(t_{i})\cdot(c_{i}'\cdot U_{d}^{c}(t_{i})-c_{i}'\cdot U_{d}^{u}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Addition von 
+\begin_inset Formula $\sum_{i=1}^{n}U_{d}^{u}(t_{i})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot(c_{i}\cdot U_{d}^{c}(t_{i})+(1-c_{i})\cdot U_{d}^{u}(t_{i}))\geq\sum_{i=1}^{n}\alpha(t_{i})\cdot(c_{i}'\cdot U_{d}^{c}(t_{i})+(1-c_{i}')\cdot U_{d}^{u}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow U_{d}(\alpha_{d},\alpha_{a})\geq U_{d}(\alpha_{d}',\alpha_{a})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(\alpha_{d},f(\alpha_{a}))\geq U_{a}(\alpha_{d},f(\alpha_{a}'))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aus der Definition des erwarteten Nutzens:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}f(\alpha_{a})\cdot(c_{i}\cdot U_{a}^{c}(t_{i})+(1-c_{i})\cdot U_{a}^{u}(t_{i}))\geq\sum_{i=1}^{n}f(\alpha_{a}')\cdot(c_{i}\cdot U_{a}^{c}(t_{i})+(1-c_{i})\cdot U_{a}^{u}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definition für 
+\begin_inset Formula $f(\alpha)$
+\end_inset
+
+ eingesetzt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\lambda\alpha_{a}(t_{i})\cdot\frac{\Delta\overline{U_{d}}(t_{i})}{\Delta\overline{U_{a}}(t_{i})}\cdot(c_{i}\cdot U_{a}^{c}(t_{i})+(1-c_{i})\cdot U_{a}^{u}(t_{i}))\geq\sum_{i=1}^{n}\lambda\alpha_{a}(t_{i})\cdot\frac{\Delta\overline{U_{d}}(t_{i})}{\Delta\overline{U_{a}}(t_{i})}\cdot(c_{i}'\cdot U_{a}^{c}(t_{i})+(1-c_{i}')\cdot U_{a}^{u}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(analog zu Teil (a)):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{i=1}^{n}\alpha(t_{i})\cdot(c_{i}\cdot U_{a}^{c}(t_{i})+(1-c_{i})\cdot U_{a}^{u}(t_{i}))\geq\sum_{i=1}^{n}\alpha_{a}(t_{i})\cdot(c_{i}'\cdot U_{a}^{c}(t_{i})+(1-c_{i}')\cdot U_{a}^{u}(t_{i}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+entspricht:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow U_{a}(\alpha_{d},\alpha_{a})\geq U_{a}(\alpha_{d},\alpha_{a}')
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Damit ist gezeigt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{d}(\alpha_{d},\alpha_{a})\geq U_{d}(\alpha_{d}',\alpha_{a})\forall\alpha_{d}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(\alpha_{d},\alpha_{a})\geq U_{a}(\alpha_{d},\alpha_{a}')\forall\alpha_{a}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ist äquivalent zu
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{U_{d}}(\alpha_{d},f(\alpha_{a}))\geq\overline{U_{d}}(\alpha_{d}',f(\alpha_{a}))\forall\alpha_{d}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(\alpha_{d},f(\alpha_{a}))\geq U_{a}(\alpha_{d},f(\alpha_{a}'))\forall\alpha_{a}'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+gegeben den Voraussetzungen aus dem Aufgabentext.
 \end_layout
 
 \end_body
