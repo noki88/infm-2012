@@ -1,0 +1,434 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{\alph{enumi})}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{rotating}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "captionpos=b"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Spieltheorie - Übungsblatt 7
+\end_layout
+
+\begin_layout Standard
+\align center
+Stefan Wrobel, Viktor Kurz
+\begin_inset Newline newline
+\end_inset
+
+{wrobels,kurzv}@informatik.uni-freiburg.de
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 1: 
+\end_layout
+
+\begin_layout Subsubsection*
+(a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Aufgabe7_1_a_1.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(b) 
+\end_layout
+
+\begin_layout Standard
+Die Strategie 
+\begin_inset Formula $KS$
+\end_inset
+
+ von Spieler 1 wird von 
+\begin_inset Formula $LB$
+\end_inset
+
+ bzw.
+ 
+\begin_inset Formula $LS$
+\end_inset
+
+ stark dominiert:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Aufgabe7_1_a_2.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nach Elimination von 
+\begin_inset Formula $KS$
+\end_inset
+
+ wird die Strategie 
+\begin_inset Formula $S$
+\end_inset
+
+ des Spielers 2 durch 
+\begin_inset Formula $B$
+\end_inset
+
+ schwach dominiert:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Aufgabe7_1_a_3.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nach Elimination werden die Strategien 
+\begin_inset Formula $LB$
+\end_inset
+
+ und 
+\begin_inset Formula $LS$
+\end_inset
+
+ von 
+\begin_inset Formula $KB$
+\end_inset
+
+ stark dominiert:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Aufgabe7_1_a_4.png
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Verbleibend ist das Strategieprofil 
+\begin_inset Formula $(KB,B)$
+\end_inset
+
+, bei dem es sich demnach um ein NG handelt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Aufgabe7_1_a_5.png
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c)
+\end_layout
+
+\begin_layout Standard
+Die NG-Profile des 
+\begin_inset Quotes eld
+\end_inset
+
+reinen
+\begin_inset Quotes erd
+\end_inset
+
+ BoS sind 
+\begin_inset Formula $(B,B)$
+\end_inset
+
+ und 
+\begin_inset Formula $(S,S)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Daher ergeben sich im Gesamtspiel durch Rückwärtsinduktion zwei TSP, nämlich
+ 
+\begin_inset Formula $(LS,S)$
+\end_inset
+
+ und 
+\begin_inset Formula $(KB,B)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Plausibler ist das TSP 
+\begin_inset Formula $(KB,B)$
+\end_inset
+
+, das Spieler 1 einen höheren Nutzen bringt (nämlich 3), als 
+\begin_inset Formula $(LS,S)$
+\end_inset
+
+ (Nutzen 2).
+\end_layout
+
+\begin_layout Standard
+Wählt Spieler 1 den rechten Teilbaum (Aktion 
+\begin_inset Formula $K$
+\end_inset
+
+), so kann er auf jeden Fall davon ausgehen, dass Spieler 2 im anschließenden
+ BoS Aktion 
+\begin_inset Formula $B$
+\end_inset
+
+ wählen wird: 
+\begin_inset Quotes eld
+\end_inset
+
+Sieht
+\begin_inset Quotes erd
+\end_inset
+
+ Spieler 2, dass Spieler 1 sich für 
+\begin_inset Formula $K$
+\end_inset
+
+ entschieden hat, so weiß Spieler 2, dass Spieler 1 beabsichtigt, einen
+ höheren Nutzen zu erzielen, als durch 
+\begin_inset Formula $L$
+\end_inset
+
+ möglich gewesen wäre (Nutzen 2).
+ Dies ist nur beim Strategieprofil 
+\begin_inset Formula $(B,B)$
+\end_inset
+
+ der Fall.
+ Dass Spieler 1 sich für 
+\begin_inset Formula $S$
+\end_inset
+
+ entscheidet macht keinen Sinn, da der Nutzen entweder 1 oder 0 beträgt,
+ sodass die Wahl von 
+\begin_inset Formula $L$
+\end_inset
+
+ auf jeden Fall höhere Auszahlung gegeben hätte.
+ Da Spieler 1 auf jeden Fall 
+\begin_inset Formula $B$
+\end_inset
+
+ spielt, muss Spieler 2 ebenfalls 
+\begin_inset Formula $B$
+\end_inset
+
+ spielen, da eine Antwort mit 
+\begin_inset Formula $S$
+\end_inset
+
+ einen geringeren Nutzen bringt.
+\end_layout
+
+\begin_layout Standard
+Durch die iterative Elimination schwach dominanter Strategien wurde daher
+ zunächst 
+\begin_inset Formula $KS$
+\end_inset
+
+ ausgeschlossen, da 
+\begin_inset Formula $L$
+\end_inset
+
+ einen höheren Nutzen hat als das NG 
+\begin_inset Formula $(S,S)$
+\end_inset
+
+ im verbleibenden BoS nach Wahl von 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ Da das NG 
+\begin_inset Formula $(B,B)$
+\end_inset
+
+ für Spieler 1 einen höheren Nutzen hat als bei 
+\begin_inset Formula $L$
+\end_inset
+
+, wurden schließlich 
+\begin_inset Formula $LB$
+\end_inset
+
+ und 
+\begin_inset Formula $LS$
+\end_inset
+
+ eliminiert.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(Stefan:) reicht das??
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 2: 
+\end_layout
+
+\end_body
+\end_document
