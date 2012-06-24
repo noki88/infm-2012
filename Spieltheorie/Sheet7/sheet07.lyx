@@ -430,5 +430,95 @@ status open
 Aufgabe 2: 
 \end_layout
 
+\begin_layout Standard
+Induktionsanfang : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta(\overline{c},\overline{c'})=1$
+\end_inset
+
+, d.h.
+ 
+\begin_inset Formula $c_{j}'<c_{j}$
+\end_inset
+
+ für ein 
+\begin_inset Formula $j\in1,...,n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Da laut Voraussetzung für alle Abdeckungswahrscheinlichkeiten gilt 
+\begin_inset Formula $0\leq c_{i}'\leq c_{i}$
+\end_inset
+
+ und 
+\begin_inset Formula $c_{j}'<c_{j}$
+\end_inset
+
+, muss 
+\begin_inset Formula $0<c_{j}$
+\end_inset
+
+ gelten.
+\end_layout
+
+\begin_layout Standard
+Die Strategie 
+\begin_inset Formula $\alpha_{d}$
+\end_inset
+
+ enthält daher mindestens ein Schedule 
+\begin_inset Formula $s$
+\end_inset
+
+, wodurch 
+\begin_inset Formula $t_{j}$
+\end_inset
+
+ abgedeckt wird.
+ 
+\end_layout
+
+\begin_layout Standard
+Da das Sicherheitsspiel die SSAS-Eigenschaft erfüllt, existiert ein Schedule
+ 
+\begin_inset Formula $s'\subseteq s$
+\end_inset
+
+, der 
+\begin_inset Formula $t_{j}$
+\end_inset
+
+ nicht abdeckt.
+\end_layout
+
+\begin_layout Standard
+Eine solche Strategie 
+\begin_inset Formula $\alpha'_{d}$
+\end_inset
+
+ kann daher konstruiert werden, indem Schedule 
+\begin_inset Formula $s$
+\end_inset
+
+ durch 
+\begin_inset Formula $s'$
+\end_inset
+
+ ersetzt wird.
+\end_layout
+
+\begin_layout Standard
+Induktionsschritt:
+\end_layout
+
+\begin_layout Standard
+ToDo
+\end_layout
+
 \end_body
 \end_document
