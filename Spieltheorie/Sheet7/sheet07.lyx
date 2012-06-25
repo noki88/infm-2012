@@ -489,11 +489,11 @@ Da das Sicherheitsspiel die SSAS-Eigenschaft erfüllt, existiert ein Schedule
 \begin_inset Formula $s'\subseteq s$
 \end_inset
 
-, der 
+, sodass 
 \begin_inset Formula $t_{j}$
 \end_inset
 
- nicht abdeckt.
+ nicht abdeckt wird.
 \end_layout
 
 \begin_layout Standard
@@ -517,7 +517,36 @@ Induktionsschritt:
 \end_layout
 
 \begin_layout Standard
-ToDo
+Angenommen, es existiert eine Strategie 
+\begin_inset Formula $\alpha'_{d}$
+\end_inset
+
+, sodass 
+\begin_inset Formula $\delta(\overline{c},\overline{c'})=k$
+\end_inset
+
+, wobei 
+\begin_inset Formula $1\leq k\leq n-1$
+\end_inset
+
+, d.h.
+ die Abdeckungswahrscheinlichkeiten für die targets unterscheiden sich bei
+ mindestens ein target und mindestens eine Abdeckungswahrscheinlichkeit
+ ist gleich.
+ Dann kann eine Strategie 
+\begin_inset Formula $\alpha''_{d}$
+\end_inset
+
+ (analog zum Induktionsanfang) kontruiert werden, sodass 
+\begin_inset Formula $\delta(\overline{c'},\overline{c''})=1$
+\end_inset
+
+ bzw.
+ 
+\begin_inset Formula $\delta(\overline{c},\overline{c''})=k+1$
+\end_inset
+
+.
 \end_layout
 
 \end_body
