@@ -88,6 +88,10 @@ Aufgabe 1:
 \end_layout
 
 \begin_layout Subsubsection*
+Aufgabe 2:
+\end_layout
+
+\begin_layout Subsubsection*
 (a)
 \end_layout
 
@@ -95,12 +99,113 @@ Aufgabe 1:
 (b) 
 \end_layout
 
-\begin_layout Subsubsection*
-Aufgabe 2: 
+\begin_layout Standard
+Für jeden Wähler i gilt entweder 
+\begin_inset Formula $ja\prec_{i}nein$
+\end_inset
+
+ oder 
+\begin_inset Formula $nein\prec_{i}ja$
+\end_inset
+
+ .
 \end_layout
 
 \begin_layout Standard
+Bei einem festen Wähler gibt es also 
+\begin_inset Formula $2^{2k}$
+\end_inset
 
+ Möglichkeiten, wie sich die anderen Wähler entscheiden können.
+\end_layout
+
+\begin_layout Standard
+Der feste Wähler ist dann entscheidend, wenn die Anzahl der 
+\begin_inset Formula $ja\prec_{i}nein$
+\end_inset
+
+ und 
+\begin_inset Formula $nein\prec_{i}ja$
+\end_inset
+
+ identisch ist, d.h.
+ genau 
+\begin_inset Formula $k$
+\end_inset
+
+ Wähler mit 
+\begin_inset Formula $ja\prec_{i}nein$
+\end_inset
+
+ stimmen.
+ Die Anzahl der Fälle, in denen dies der Fall ist, ist:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta_{i}=\binom{2k}{k}=\frac{(2k)!}{(2k-k)!\cdot k!}=\frac{(2k)!}{(k!)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Stirlingsche Formel eingesetzt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\approx\frac{(2k)^{2k}\cdot e^{-2k}\cdot\sqrt{2\pi}\cdot\sqrt{2k}}{(k{}^{k}\cdot e^{-k}\cdot\sqrt{2\pi}\cdot\sqrt{k})^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{2^{2k}\cdot k{}^{2k}\cdot e^{-2k}\cdot\sqrt{\pi}\cdot\sqrt{k}\cdot2}{k{}^{2k}\cdot e^{-2k}\cdot(\sqrt{\pi}\cdot\sqrt{k})^{2}\cdot2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{2^{2k}}{\sqrt{\pi}\cdot\sqrt{k}}=\frac{2^{2k}}{\sqrt{\pi\cdot k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ein Wähler i ist also in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B_{i}=\frac{\delta_{i}}{2^{2k}}=\frac{\frac{2^{2k}}{\sqrt{\pi\cdot k}}}{2^{2k}}=\frac{1}{\sqrt{\pi\cdot k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fällen entscheidend.
 \end_layout
 
 \end_body
