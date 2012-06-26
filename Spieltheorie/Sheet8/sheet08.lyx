@@ -1,0 +1,212 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{\alph{enumi})}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{rotating}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "captionpos=b"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Spieltheorie - Übungsblatt 8
+\end_layout
+
+\begin_layout Standard
+\align center
+Stefan Wrobel, Viktor Kurz
+\begin_inset Newline newline
+\end_inset
+
+{wrobels,kurzv}@informatik.uni-freiburg.de
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 1: 
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 2:
+\end_layout
+
+\begin_layout Subsubsection*
+(a)
+\end_layout
+
+\begin_layout Subsubsection*
+(b) 
+\end_layout
+
+\begin_layout Standard
+Für jeden Wähler i gilt entweder 
+\begin_inset Formula $ja\prec_{i}nein$
+\end_inset
+
+ oder 
+\begin_inset Formula $nein\prec_{i}ja$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Bei einem festen Wähler gibt es also 
+\begin_inset Formula $2^{2k}$
+\end_inset
+
+ Möglichkeiten, wie sich die anderen Wähler entscheiden können.
+\end_layout
+
+\begin_layout Standard
+Der feste Wähler ist dann entscheidend, wenn die Anzahl der 
+\begin_inset Formula $ja\prec_{i}nein$
+\end_inset
+
+ und 
+\begin_inset Formula $nein\prec_{i}ja$
+\end_inset
+
+ identisch ist, d.h.
+ genau 
+\begin_inset Formula $k$
+\end_inset
+
+ Wähler mit 
+\begin_inset Formula $ja\prec_{i}nein$
+\end_inset
+
+ stimmen.
+ Die Anzahl der Fälle, in denen dies der Fall ist, ist:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta_{i}=\binom{2k}{k}=\frac{(2k)!}{(2k-k)!\cdot k!}=\frac{(2k)!}{(k!)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Stirlingsche Formel eingesetzt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\approx\frac{(2k)^{2k}\cdot e^{-2k}\cdot\sqrt{2\pi}\cdot\sqrt{2k}}{(k{}^{k}\cdot e^{-k}\cdot\sqrt{2\pi}\cdot\sqrt{k})^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{2^{2k}\cdot k{}^{2k}\cdot e^{-2k}\cdot\sqrt{\pi}\cdot\sqrt{k}\cdot2}{k{}^{2k}\cdot e^{-2k}\cdot(\sqrt{\pi}\cdot\sqrt{k})^{2}\cdot2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{2^{2k}}{\sqrt{\pi}\cdot\sqrt{k}}=\frac{2^{2k}}{\sqrt{\pi\cdot k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ein Wähler i ist also in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B_{i}=\frac{\delta_{i}}{2^{2k}}=\frac{\frac{2^{2k}}{\sqrt{\pi\cdot k}}}{2^{2k}}=\frac{1}{\sqrt{\pi\cdot k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fällen entscheidend.
+\end_layout
+
+\end_body
+\end_document
