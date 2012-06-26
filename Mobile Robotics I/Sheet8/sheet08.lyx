@@ -1,0 +1,714 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrartcl
+\begin_preamble
+\renewcommand{\labelenumi}{\alph{enumi})}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation 0cm
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "captionpos=b"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Mobile Robotics - Übungsblatt 8
+\end_layout
+
+\begin_layout Standard
+\align center
+Stefan Wrobel, Viktor Kurz
+\begin_inset Newline newline
+\end_inset
+
+{wrobels,kurzv}@informatik.uni-freiburg.de
+\end_layout
+
+\begin_layout Subsubsection*
+Aufgabe 1: 
+\end_layout
+
+\begin_layout Subsubsection*
+(a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{t}$
+\end_inset
+
+: Matrix, die beschreibt, wie sich die Umgebung innerhalb eines Zeitintervalls
+ verändert, wenn sich der Roboter nicht bewegt.
+ Durch Multiplikation der Matrix des letzten Zustands 
+\begin_inset Formula $x_{t-1}$
+\end_inset
+
+ mit 
+\begin_inset Formula $A_{t}$
+\end_inset
+
+ erhält man den neuen Zustand 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{t}:$
+\end_inset
+
+ Matrix, die beschreibt, in welchem Zustand sich der Roboter befindet, wenn
+ ein Kommando ausgeführt wurde.
+ Durch Multiplikation mit der Matrix 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+ (die das ausgeführte Kommando zum aktuellen Zeitpunkt beschreibt) mit 
+\begin_inset Formula $B_{t}$
+\end_inset
+
+ erhält man den relativen Zustand zu 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{t}$
+\end_inset
+
+: Matrix, die beschreibt, wie anhand des aktuellen Zustands eine Beobachtung
+ generiert werden kann.
+ Multiplikation der Matrix 
+\begin_inset Formula $C_{t}$
+\end_inset
+
+ mit dem aktuellen Zustand 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ ergibt eine Beobachtung 
+\begin_inset Formula $z_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varepsilon_{t}$
+\end_inset
+
+: Normalverteilter Zufallswert, der das Rauschen des Bewegungsmodells repräsenti
+ert.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta_{t}$
+\end_inset
+
+: Normalverteilter Zufallswert, der das Rauschen des Messmodells repräsentiert.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu_{t}:$
+\end_inset
+
+ Erwartungswert der Wahrscheinlichkeitsverteilung des aktuellen Zustands.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma_{t}$
+\end_inset
+
+: Varianz der Wahrscheinlichkeitsverteilung des aktuellen Zustands.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{t}$
+\end_inset
+
+: 
+\begin_inset Quotes eld
+\end_inset
+
+Maß
+\begin_inset Quotes erd
+\end_inset
+
+ für die Genauigkeit der Messung: Umso genauer die Messung, desto geringer
+ ist die neue Varianz.
+\end_layout
+
+\begin_layout Standard
+Beim Kalman-Filter wird eine Gauß-Verteilung mittels der Werte 
+\begin_inset Formula $\mu$
+\end_inset
+
+ (Erwartungswert) und 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ (Varianz) angegeben, die die Wahrscheinlichkeit für den aktuellen Zustand
+ angibt.
+\end_layout
+
+\begin_layout Standard
+Der Kalman-Filter besteht aus zwei Schritten:
+\end_layout
+
+\begin_layout Standard
+1) Ausführung eines Kommandos und Vorhersage/
+\begin_inset Quotes erd
+\end_inset
+
+prediction
+\begin_inset Quotes erd
+\end_inset
+
+ des aktuellen Zustands
+\end_layout
+
+\begin_layout Standard
+2) Messung/Beobachtung und Korrektur des Zustands anhand der gemessenen
+ Daten (
+\begin_inset Quotes eld
+\end_inset
+
+correction
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Der KF funktioniert allerdings nur, wenn für die Berechnung von 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ und 
+\begin_inset Formula $z_{t}$
+\end_inset
+
+ lineare Funktionen verwendet werden: Wird eine Gauß-Verteilung mit einer
+ linearen Funktion multipliziert, so ergibt sich abermals eine Gauß-Verteilung.
+ Bei nichtlinearen Funktionen ist dies nicht der Fall.
+ Beim Extendend-Kalman-Filter wird das Problem gelöst, indem nicht-lineare
+ Funktionen mittels Taylor-Reihen angenähert werden.
+\end_layout
+
+\begin_layout Subsubsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(z_{t}|x_{t})$
+\end_inset
+
+: Normalverteilung mit 
+\begin_inset Formula $N(x_{t};z_{t},\sigma_{obs}^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(z_{t}|x_{t})\cdot\overline{bel}(x_{t})=N(x_{t};z_{t},\sigma_{obs}^{2})\cdot N(x_{t};\overline{\mu_{t}},\overline{\sigma_{t}^{2}})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Durch Multplikation zweier Normalverteilungen ergibt sich abermals eine
+ Normalverteilung mit
+\end_layout
+
+\begin_layout Standard
+Mittelwert:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\[
+\mu_{t}=\frac{\overline{\sigma_{t}^{2}}}{\overline{\sigma_{t}^{2}}\cdot+\sigma}\cdot z_{t}+\frac{\sigma_{obs}^{2}}{\overline{\sigma_{t}^{2}}\cdot+\sigma}\cdot\overline{\mu_{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\[
+=\frac{\overline{\sigma_{t}^{2}}\cdot z_{t}+\sigma_{obs}^{2}\cdot\overline{\mu_{t}}}{\overline{\sigma_{t}^{2}}+\sigma_{obs}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\[
+=\frac{\overline{\sigma_{t}^{2}}\cdot z_{t}+\sigma_{obs}^{2}\cdot\overline{\mu_{t}}+\overline{\sigma_{t}^{2}}\cdot\overline{\mu_{t}}-\overline{\sigma_{t}^{2}}\cdot\overline{\mu_{t}}}{\overline{\sigma_{t}^{2}}+\sigma_{obs}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\[
+=\frac{\overline{\sigma_{t}^{2}}\cdot(z_{t}-\overline{\mu_{t}})+(\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}})\cdot\overline{\mu_{t}}}{\overline{\sigma_{t}^{2}}+\sigma_{obs}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\[
+=(z_{t}-\overline{\mu_{t}})\cdot\frac{\overline{\sigma_{t}^{2}}}{\overline{\sigma_{t}^{2}}+\sigma_{obs}^{2}}+\overline{\mu_{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula 
+\[
+=\overline{\mu_{t}}+k_{t}\cdot(z_{t}-\overline{\mu_{t}})
+\]
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang ngerman
+Varianz:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{t}^{2}=\frac{1}{(\overline{\sigma_{t}^{2}})^{-1}+(\sigma_{obs}^{2})^{-1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{1}{\frac{1}{\overline{\sigma_{t}^{2}}}+\frac{1}{\sigma_{obs}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{1}{\frac{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}}{\overline{\sigma_{t}^{2}}\cdot\sigma_{obs}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{\overline{\sigma_{t}^{2}}\cdot\sigma_{obs}^{2}}{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\overline{\sigma_{t}^{2}}\cdot\frac{\sigma_{obs}^{2}}{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\overline{\sigma_{t}^{2}}\cdot\frac{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}-\overline{\sigma_{t}^{2}}}{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\overline{\sigma_{t}^{2}}\cdot\left(\frac{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}}{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}}-\frac{\overline{\sigma_{t}^{2}}}{\sigma_{obs}^{2}+\overline{\sigma_{t}^{2}}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\overline{\sigma_{t}^{2}}\cdot(1-k_{t})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Aufgabe 2:
+\end_layout
+
+\begin_layout Subsubsection*
+(a)
+\end_layout
+
+\begin_layout Standard
+Motion-Modell, Odometry-basiert:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{t}=\left(\begin{array}{c}
+x\\
+y\\
+\theta
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $u_{t}=\left(\begin{array}{c}
+\delta_{rot1}\\
+\delta_{trans}\\
+\delta_{rot2}
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta_{t}=\left(\begin{array}{c}
+\delta_{trans}\cdot cos(\theta+\delta_{rot1})\\
+\delta\cdot sin(\theta+\delta_{rot1})\\
+\delta_{rot1}+\delta_{rot2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+g(x_{t},u_{t})=x_{t}+\Delta_{t}=\left(\begin{array}{c}
+x+\delta_{trans}\cdot cos(\theta+\delta_{rot1})\\
+y+\delta_{trans}\cdot sin(\theta+\delta_{rot1})\\
+\theta+\delta_{rot1}+\delta_{rot2}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{t}=\left(\begin{array}{ccc}
+\frac{\delta(x+\delta_{trans}\cdot cos(\theta+\delta_{rot1}))}{\delta x} & \frac{\delta(x+\delta_{trans}\cdot cos(\theta+\delta_{rot1}))}{\delta y} & \frac{\delta(x+\delta_{trans}\cdot cos(\theta+\delta_{rot1}))}{\delta\theta}\\
+\frac{\delta(y+\delta_{trans}\cdot sin(\theta+\delta_{rot1}))}{\delta x} & \frac{\delta(y+\delta_{trans}\cdot sin(\theta+\delta_{rot1}))}{\delta y} & \frac{\delta(y+\delta_{trans}\cdot sin(\theta+\delta_{rot1}))}{\delta\theta}\\
+\frac{\delta(\theta+\delta_{rot1}+\delta_{rot2})}{\delta x} & \frac{\delta(\theta+\delta_{rot1}+\delta_{rot2})}{\delta y} & \frac{\delta(\theta+\delta_{rot1}+\delta_{rot2})}{\delta\theta}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(\begin{array}{ccc}
+1 & 0 & -sin(\theta+\delta_{rot1})\\
+0 & 1 & cos(\theta+\delta_{rot1})\\
+0 & 0 & 1
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+s.
+ prediction_step.m
+\end_layout
+
+\begin_layout Subsubsection*
+(c)
+\end_layout
+
+\begin_layout Standard
+Beim Partikel-Filter werden vier Parameter als Rausch-Werte verwendet.
+ (Kalman-Filter: nur drei)
+\end_layout
+
+\begin_layout Subsubsection
+Aufgabe 3:
+\end_layout
+
+\begin_layout Subsubsection*
+(a)
+\end_layout
+
+\begin_layout Standard
+landmark: 
+\begin_inset Formula $l=\left(\begin{array}{c}
+id\\
+lx\\
+ly
+\end{array}\right)$
+\end_inset
+
+ , measurement 
+\begin_inset Formula $z_{t}=\left(dist\right)$
+\end_inset
+
+, 
+\begin_inset Formula $x_{t}=\left(\begin{array}{c}
+x\\
+y\\
+\theta
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{t}=h(x_{t},l)=\left(\sqrt{(lx-x)^{2}+(ly-y)^{2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{t}=\left(\begin{array}{ccc}
+\frac{\delta(\sqrt{(lx-x)^{2}+(ly-y)^{2}})}{\delta x} & \frac{\delta(\sqrt{(lx-x)^{2}+(ly-y)^{2}})}{\delta y} & \frac{\delta(\sqrt{(lx-x)^{2}+(ly-y)^{2}})}{\delta\theta}\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left(\begin{array}{ccc}
+\frac{x-lx}{\sqrt{(lx-x)^{2}+(ly-y)^{2}}} & \frac{y-ly}{\sqrt{(lx-x)^{2}+(ly-y)^{2}}} & 0\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(b)
+\end_layout
+
+\begin_layout Standard
+s.
+ correction_step.m
+\end_layout
+
+\end_body
+\end_document
