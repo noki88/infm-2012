@@ -1793,7 +1793,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\exists x(student(x)\Rightarrow istDurchgefallen(x,KI)\land istDurchgefallen(x,ST))
+\exists x(student(x)\land istDurchgefallen(x,KI)\land istDurchgefallen(x,ST))
 \]
 
 \end_inset
@@ -1808,7 +1808,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\exists x\exists y((student(x)\Rightarrow istDurchgefallen(x,KI))\land(student(y)\Rightarrow istDurchgefallen(y,KI))\land\neg(x=y))
+\exists x\exists y\neg\exists z(student(x)\land istDurchgefallen(x,KI)\land student(y)\land istDurchgefallen(y,KI)\land student(z)\land istDurchgefallen(z,KI)\land(z=x)\land(z=y)\land\neg(x=y))
 \]
 
 \end_inset
@@ -1823,7 +1823,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\forall y\exists x(barbier(x)\Rightarrow(\neg rasiert(y,y)\Rightarrow rasiert(x,y)))
+\forall y\exists x(\neg rasiert(y,y)\Rightarrow barbier(x)\land rasiert(x,y))
 \]
 
 \end_inset
@@ -1838,7 +1838,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\neg\exists x\exists y((professor(y)\Rightarrow\neg klug(y))\Rightarrow mag(x,y))
+\neg\exists x\exists y(professor(y)\land\neg klug(y)\land mag(x,y))
 \]
 
 \end_inset
