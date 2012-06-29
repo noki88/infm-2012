@@ -22,9 +22,14 @@ function [mu, sigma] = prediction_step(mu, sigma, u)
 	  y + trans * sin(t + r1);
 	  t + r1 + r2];
 
+    % current state
+    x = mu(1);
+    y = mu(2);
+    t = mu(3);
+	  
     % Compute the Jacobian of g with respect to the state
-    G = [1, 0, -sin(t + r1);
-	0, 1, cos(t + r1);
+    G = [1, 0, -sin(t + r1)*trans;
+	0, 1, cos(t + r1)*trans;
 	0, 0, 1];
 
     % Motion noise

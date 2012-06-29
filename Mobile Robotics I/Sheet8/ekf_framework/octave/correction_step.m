@@ -42,5 +42,5 @@ function [mu, sigma] = correction_step(mu, sigma, z, l)
 
     K = sigma * H' * (H * sigma * H' + R)^(-1)
     mu = mu + K * (Z - expected_ranges)
-    sigma = (ones(3,3) - K * H) * sigma
+    sigma = (eye(3) - K * H) * sigma
 end
