@@ -87,6 +87,774 @@ Stefan Wrobel, Viktor Kurz
 Aufgabe 1: 
 \end_layout
 
+\begin_layout Standard
+Normalform des Sicherheitsspiels:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die möglichen echt gemischten Strategieprofile sind:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+(a)
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 3mm
+\end_inset
+
+
+\series bold
+(b)
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 3mm
+\end_inset
+
+
+\series bold
+(c)
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 3mm
+\end_inset
+
+
+\series bold
+(d)
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 3mm
+\end_inset
+
+
+\series bold
+(e)
+\series default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(a) 
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(t_{1},\alpha_{a}(t_{1}))=U_{a}(t_{1},\alpha_{a}(t_{2}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})=3\cdot\alpha_{a}(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1-\alpha_{a}(t_{2})=3\cdot\alpha_{a}(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{2})=\frac{1}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})=\frac{3}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{d}(t_{1},(\alpha_{a}(t_{1}),\alpha_{a}(t_{2}))\geq U_{d}(t_{2},(\alpha_{a}(t_{1}),\alpha_{a}(t_{2}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{3}{4}\geq\frac{1}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+Nash im gemischten Strategieprofil: 
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $((1,0),(\frac{3}{4},\frac{1}{4}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(b) 
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(t_{2},\alpha_{a}(t_{1}))=U_{a}(t_{2},\alpha_{a}(t_{2}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\cdot\alpha_{a}(t_{1})=\alpha_{a}(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})=\frac{1}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{2})=\frac{2}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{d}(t_{2},(\alpha_{a}(t_{1}),\alpha_{a}(t_{2}))\geq U_{d}(t_{1},(\alpha_{a}(t_{1}),\alpha_{a}(t_{2}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{2}{3}\geq\frac{1}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+Nash im gemischten Strategieprofil: 
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $((0,1),(\frac{1}{3},\frac{2}{3}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(c) 
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{d}(\alpha_{d}(t_{1}),t_{1})=U_{d}(\alpha_{d}(t_{2}),t_{1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})=0\cdot\alpha_{d}(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+kein Nash im gemischten Strategieprofil: 
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(d) 
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{d}(\alpha_{d}(t_{1}),t_{2})=U_{d}(\alpha_{d}(t_{2}),t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=\alpha(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+kein Nash im gemischten Strategieprofil: 
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+(e) 
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{a}(t_{1},(\alpha_{d}(t_{1}),\alpha_{d}(t_{2}))\geq U_{a}(t_{2},(\alpha_{d}(t_{1}),\alpha_{d}(t_{2}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{d}(t_{1})+2\cdot\alpha_{d}(t_{2})=3\cdot\alpha_{d}(t_{1})+\alpha_{d}(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{d}(t_{2})=2\cdot\alpha_{d}(t_{1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{d}(t_{1})=\frac{1}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{d}(t_{2})=\frac{2}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U_{d}(t_{1},(\alpha_{a}(t_{1}),\alpha_{a}(t_{2}))\geq U_{d}(t_{2},(\alpha_{a}(t_{1}),\alpha_{a}(t_{2}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})+2\cdot\alpha_{a}(t_{2})=3\cdot\alpha_{a}(t_{1})+\alpha_{a}(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})=\alpha_{a}(t_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{1})=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{a}(t_{2})=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+Nash im gemischten Strategieprofil: 
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+vs.
+\begin_inset Formula $\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+ 
+\begin_inset Formula $((\frac{1}{3},\frac{2}{3}),(\frac{1}{2},\frac{1}{2}))$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 Aufgabe 2:
 \end_layout
