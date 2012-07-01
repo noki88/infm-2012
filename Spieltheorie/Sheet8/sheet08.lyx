@@ -290,6 +290,82 @@ Normalform des Sicherheitsspiels:
 \end_layout
 
 \begin_layout Standard
+In diesem Spiel gibt es keine reinen NGs da:
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+vs
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+: 
+\series medium
+\lang english
+
+\begin_inset Formula $U_{a}(t_{1},t_{1})\ngeq U_{a}(t_{1},t_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+vs
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+: 
+\series medium
+\lang english
+
+\begin_inset Formula $U_{d}(t_{1},t_{2})\ngeq U_{d}(t_{2},t_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+vs
+\begin_inset Formula $\left\{ t_{1}\right\} $
+\end_inset
+
+: 
+\series medium
+\lang english
+
+\begin_inset Formula $U_{d}(t_{2},t_{1})\ngeq U_{d}(t_{1},t_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+vs
+\begin_inset Formula $\left\{ t_{2}\right\} $
+\end_inset
+
+: 
+\series medium
+\lang english
+
+\begin_inset Formula $U_{a}(t_{2},t_{2})\ngeq U_{a}(t_{1},t_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Die möglichen echt gemischten Strategieprofile sind:
 \end_layout
 
