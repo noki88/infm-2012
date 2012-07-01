@@ -1425,7 +1425,7 @@ K=\{\{A,B,\text{¬}C\},\{\text{¬}A,C\},\{\text{¬}A,\text{¬}B\},\{A,C\}\}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-K\cup(\neg B\Rightarrow(A\land C))=\{\{A,B,\neg C\},\{\text{\neg}A,C\},\{\neg A,\neg B\},\{A,C\},\{\neg B\},\{\neg A,\neg C\}\}
+K\cup\neg(\neg B\Rightarrow(A\land C))=\{\{A,B,\neg C\},\{\text{\neg}A,C\},\{\neg A,\neg B\},\{A,C\},\{\neg B\},\{\neg A,\neg C\}\}
 \]
 
 \end_inset
@@ -1475,6 +1475,20 @@ K\cup(\neg B\Rightarrow(A\land C))=\{\{A,B,\neg C\},\{\text{\neg}A,C\},\{\neg A,
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Leere Klausel enthalten, d.h.
+ 
+\begin_inset Formula $K\cup\neg(\neg B\Rightarrow(A\land C))$
+\end_inset
+
+ nicht erfüllbar, d.h.
+ 
+\begin_inset Formula $K\models(\neg B\Rightarrow(A\land C))$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1779,7 +1793,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\exists x(student(x)\Rightarrow istDurchgefallen(x,KI)\land istDurchgefallen(x,ST))
+\exists x(student(x)\land istDurchgefallen(x,KI)\land istDurchgefallen(x,ST))
 \]
 
 \end_inset
@@ -1794,7 +1808,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\exists x\exists y((student(x)\Rightarrow istDurchgefallen(x,KI))\land(student(y)\Rightarrow istDurchgefallen(y,KI))\land\neg(x=y))
+\exists x\exists y\neg\exists z(student(x)\land istDurchgefallen(x,KI)\land student(y)\land istDurchgefallen(y,KI)\land student(z)\land istDurchgefallen(z,KI)\land(z=x)\land(z=y)\land\neg(x=y))
 \]
 
 \end_inset
@@ -1809,7 +1823,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\forall y\exists x(barbier(x)\Rightarrow(\neg rasiert(y,y)\Rightarrow rasiert(x,y)))
+\forall y\exists x(\neg rasiert(y,y)\Rightarrow barbier(x)\land rasiert(x,y))
 \]
 
 \end_inset
@@ -1824,7 +1838,7 @@ Aufgabe 4.3:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\neg\exists x\exists y((professor(y)\Rightarrow\neg klug(y))\Rightarrow mag(x,y))
+\neg\exists x\exists y(professor(y)\land\neg klug(y)\land mag(x,y))
 \]
 
 \end_inset
@@ -1968,6 +1982,136 @@ Aufgabe 4.5:
 
 \begin_layout Subsubsection*
 (a) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall z\exists y(P(x,g(y),z)\lor\neg\forall xQ(x))\land\neg\forall z\exists x\forall t\neg R(f(x,z),z,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\neg$
+\end_inset
+
+ nach innen verschieben:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall z\exists y(P(x,g(y),z)\lor\exists x\neg Q(x))\land\exists z\neg\exists x\forall t\neg R(f(x,z),z,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall z\exists y(P(x,g(y),z)\lor\exists x\neg Q(x))\land\exists z\forall x\neg\forall t\neg R(f(x,z),z,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall z\exists y(P(x,g(y),z)\lor\exists x\neg Q(x))\land\exists z\forall x\exists t\neg\neg R(f(x,z),z,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall z\exists y(P(x,g(y),z)\lor\exists x\neg Q(x))\land\exists z\forall x\exists tR(f(x,z),z,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Variablen standardisieren:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall z\exists y(P(x,g(y),z)\lor\exists u\neg Q(u))\land\exists w\forall v\exists tR(f(v,w),w,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Skolemisierung:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall z(P(x,g(F(z)),z)\lor\neg Q(G(u)))\land\forall vR(f(v,W),W,H(v))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Weglassen der Universalquantifizierer:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(P(x,g(F(z)),z)\lor\neg Q(G(u)))\land R(f(v,W),W,H(v))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distribute 
+\begin_inset Formula $\land$
+\end_inset
+
+ over 
+\begin_inset Formula $\lor$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(P(x,g(F(z)),z)\lor\neg Q(G(u)))\land R(f(v,W),W,H(v))
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
