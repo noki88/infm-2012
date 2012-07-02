@@ -21,11 +21,6 @@ function [mu, sigma] = prediction_step(mu, sigma, u)
     mu = [ x + trans * cos(t + r1);
 	  y + trans * sin(t + r1);
 	  t + r1 + r2];
-
-    % current state
-    x = mu(1);
-    y = mu(2);
-    t = mu(3);
 	  
     % Compute the Jacobian of g with respect to the state
     G = [1, 0, -sin(t + r1)*trans;
