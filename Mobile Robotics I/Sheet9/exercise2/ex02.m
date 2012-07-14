@@ -28,22 +28,22 @@ c=[0:grid_resolution:map_length];
 % loop over all measurements
 for i = 1:size(measurements,2)
   % p: probability that a cell is occupied given the measurement
-  p = zeros(1,21);
+  p = zeros(1,size(c,2));
   % loop over all cells
-  for j = 1:21
-  disp("cell:"), disp(c(j))
-  disp("measurement:"), disp(measurements(i))
+  for j = 1:size(c,2)
+  %disp("cell:"), disp(c(j))
+  %disp("measurement:"), disp(measurements(i))
     if c(j) < measurements(i)
       % cell is free if measured distance is greater than the cell distance
       p(j) = p_free;
-      disp("--> free")
+      %disp("--> free")
     elseif measurements(i) > c(j) - dist_behind 
       % cell is meant to be occupied
       p(j) = p_occ;
-      disp("--> occ")
+      %disp("--> occ")
     else
       % cell is more than 20cm behind the measurement, i.e. no update
-      disp("--> not updated")
+      %disp("--> not updated")
       continue;
     endif
     m(j) = 1/(1 + (1-p(j))/p(j) * prior/(1-prior) * (1-m(j))/m(j) );

@@ -108,6 +108,178 @@ Die alternative Erweiterung ermittelt zunächst den Gewinner der Wahl aus
 (b) 
 \end_layout
 
+\begin_layout Standard
+Wählerpräferenzen:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\succ_{1}b\succ_{1}c\succ_{1}d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\succ_{2}b\succ_{2}c\succ_{2}d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b\succ_{3}c\succ_{3}d\succ_{3}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c\succ_{4}b\succ_{4}d\succ_{4}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d\succ_{5}c\succ_{5}b\succ_{5}a$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wahlverfahren f: Pluralitätswahl mit übertragbarer Stimme.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mit der Erweiterungsvorschrift aus der Vorlesung:
+\end_layout
+
+\begin_layout Standard
+Aus den gegebenen Wählerpräferenzen ergibt sich beim paarweisen Vergleich
+ 
+\begin_inset Formula $b\succ a$
+\end_inset
+
+, 
+\begin_inset Formula $c\succ a$
+\end_inset
+
+, 
+\begin_inset Formula $d\succ a$
+\end_inset
+
+, 
+\begin_inset Formula $b\succ c$
+\end_inset
+
+, 
+\begin_inset Formula $b\succ d$
+\end_inset
+
+, 
+\begin_inset Formula $c\succ d$
+\end_inset
+
+ und somit die soziale Wohlfahrtsfunktion 
+\begin_inset Formula $b\succ c\succ d\succ a$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mit der alternativen Erweiterungsvorschrift:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\{a,b,c,d\}:$
+\end_inset
+
+ erst 
+\begin_inset Formula $b$
+\end_inset
+
+, dann 
+\begin_inset Formula $d$
+\end_inset
+
+, dann 
+\begin_inset Formula $a$
+\end_inset
+
+ werden gestrichen, 
+\begin_inset Formula $c$
+\end_inset
+
+ gewinnt,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\{a,b,d\}:$
+\end_inset
+
+ erst 
+\begin_inset Formula $d$
+\end_inset
+
+, dann 
+\begin_inset Formula $a$
+\end_inset
+
+ werden gestrichen, 
+\begin_inset Formula $b$
+\end_inset
+
+ gewinnt,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\{a,d\}:$
+\end_inset
+
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ wird gestrichen, 
+\begin_inset Formula $a$
+\end_inset
+
+ gewinnt,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\{d\}:$
+\end_inset
+
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ gewinnt,
+\end_layout
+
+\begin_layout Standard
+womit sich die soziale Wohlfahrtsfunktion 
+\begin_inset Formula $c\succ b\succ d\succ a$
+\end_inset
+
+ ergibt.
+\end_layout
+
 \begin_layout Subsubsection*
 Aufgabe 2:
 \end_layout
