@@ -289,18 +289,69 @@ Aufgabe 2:
 \end_layout
 
 \begin_layout Standard
-Konstruiere Präferenzprofile:
+Konstruiere Präferenzprofile 
+\begin_inset Formula $\prec_{i}$
+\end_inset
+
+ so dass gilt 
+\begin_inset Formula $b\prec_{i}a$
+\end_inset
+
+ für alle 
+\begin_inset Formula $b\neq a$
+\end_inset
+
+ und 
+\begin_inset Formula $i=1,...,n$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(1)\: a^{*}\prec_{i}b\prec_{i}a\hphantom{blabla}f(\prec_{i})=a$
+Somit gilt: 
+\begin_inset Formula $f(\prec_{1},...,\prec_{i},...,\prec_{n})=a$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(2)\: a^{*}\prec_{i}^{\prime}a\prec_{i}^{\prime}b\hphantom{blabla}f(\prec_{i}^{\prime})=a^{*}$
+Sei das 
+\begin_inset Formula $i$
+\end_inset
+
+-te Präferenzprofil wie folgt gegeben:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(1)\: a^{*}\prec_{i}b\prec_{i}a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Konstruiere Präferenzprofil 
+\begin_inset Formula $\prec_{i}^{\prime}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(2)\: a^{*}\prec_{i}^{\prime}a\prec_{i}^{\prime}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Somit gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(\prec_{1},...,\prec_{i}^{\prime},...,\prec_{n})=a^{*}$
 \end_inset
 
 

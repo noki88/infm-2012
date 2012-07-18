@@ -144,7 +144,7 @@ Die Strategie
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -183,7 +183,7 @@ Nach Elimination von
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -222,7 +222,7 @@ Nach Elimination werden die Strategien
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -253,7 +253,7 @@ Verbleibend ist das Strategieprofil
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -493,7 +493,7 @@ Da das Sicherheitsspiel die SSAS-Eigenschaft erfüllt, existiert ein Schedule
 \begin_inset Formula $t_{j}$
 \end_inset
 
- nicht abdeckt wird.
+ nicht abgedeckt wird.
 \end_layout
 
 \begin_layout Standard
@@ -530,14 +530,14 @@ Angenommen, es existiert eine Strategie
 \end_inset
 
 , d.h.
- die Abdeckungswahrscheinlichkeiten für die targets unterscheiden sich bei
- mindestens ein target und mindestens eine Abdeckungswahrscheinlichkeit
+ die Abdeckungswahrscheinlichkeiten für die Targets unterscheiden sich bei
+ mindestens einem Target und mindestens eine Abdeckungswahrscheinlichkeit
  ist gleich.
  Dann kann eine Strategie 
 \begin_inset Formula $\alpha''_{d}$
 \end_inset
 
- (analog zum Induktionsanfang) kontruiert werden, sodass 
+ (analog zum Induktionsanfang) konstruiert werden, sodass 
 \begin_inset Formula $\delta(\overline{c'},\overline{c''})=1$
 \end_inset
 
